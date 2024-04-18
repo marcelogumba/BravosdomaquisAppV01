@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BravosdomaquisApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApiBase" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">https://bravosdomaquisapi.azurewebsites.net/api/</Value>
+    </Setting>
+    <Setting Name="UserLogado" Type="Maquis.Models.Domain.Register" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsAnyOne" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
