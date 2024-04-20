@@ -12,6 +12,8 @@ using Maquis.Models.Domain;
 using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Threading;
+using BravosdomaquisApp.ExtensionMethod;
+using Microsoft.AspNetCore.Http;
 
 namespace BravosdomaquisApp
 {
@@ -36,12 +38,7 @@ namespace BravosdomaquisApp
             panelAprovReproNotify.Width = 919; ;
         }
 
-        public void showNotify(NotifyType tipo, string mensagem)
-        {
-            // tipo : 1 - seucesso, 2 - Info, 3 - Aviso
-            Notification notify = new Notification(tipo, mensagem);
-            notify.Show();
-        }
+       
 
         public void darkMode()
         {
@@ -149,7 +146,7 @@ namespace BravosdomaquisApp
             DataGridViewSociosInscritos.Visible = true;
         }
 
-        private void btnVerSociosInscritos_Click(object sender, EventArgs e)
+        private async void btnVerSociosInscritos_Click(object sender, EventArgs e)
         {
             panelVerSociosInscritos.Visible = true;
             panelVerSociosInscritos.Dock = DockStyle.Fill;
@@ -159,6 +156,7 @@ namespace BravosdomaquisApp
 
             panelVerSociosExistentes.Visible = false;
             panelVerSociosExistentes.Dock = DockStyle.None;
+            await getSocios();
         }
 
         private void DataGridViewPontuacoes_MouseClick(object sender, MouseEventArgs e)
@@ -227,35 +225,56 @@ namespace BravosdomaquisApp
             panelVerSociosExistentes.Visible = true;
             panelVerSociosExistentes.Dock = DockStyle.Fill;
 
-            getSocios();
+            await getSocios();
         }
 
-        public async void getSocios()
+        public async Task getSocios()
         {
-            TelaProgress tl = new TelaProgress(true);
-            Thread progressThread = new Thread(() => Application.Run(tl));
-            progressThread.Start();
+            // Criação e exibição da tela de progresso em uma nova thread
+            TelaProgress telaProgress = new TelaProgress(true);
+            //telaProgress.TopMost = true;
+            //Thread progressThread = new Thread(() => Application.Run(telaProgress));
+            //progressThread.Start();
+
 
             try
             {
+                this.ShowDialogThreadSafe(telaProgress);
+                // Solicitação assíncrona para obter dados
                 var result = await ServiceBase.service().GetAsync<Collection<Maquis.Models.Domain.Socio>>("Socio");
+                var result1 = await ServiceBase.service().GetAsync<Collection<Maquis.Models.Domain.Socio>>("Socio/Activos");
 
-                if (result != null)
+                // Verifica se a resposta não é nula e atualiza a fonte de dados
+                if (result != null && result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    socioBindingSource.DataSource = result.Data;
+                    if(result.Data != null)
+                        socioBindingSource.DataSource = result.Data;
                 }
-                tl.Invoke((Action)delegate { tl.Close(); });
+                if (result1 != null && result1.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    if (result.Data != null)
+                        bindingSource1.DataSource = result1.Data;
+                }
             }
             catch (HttpRequestException ex)
             {
-                tl.Invoke((Action)delegate { tl.Close(); });
-                showNotify(NotifyType.erro, "OCORREU ALGUM ERRO DE LIGAÇÃO: \n" + ex.Message);
+                // Captura e trata exceções de HTTP
+                this.ShowNotify(NotifyType.erro, "OCORREU ALGUM ERRO DE LIGAÇÃO: \n" + ex.Message);
             }
             catch (Exception ex)
             {
-                tl.Invoke((Action)delegate { tl.Close(); });
-                showNotify(NotifyType.erro, "OCORREU ALGUM ERRO DO SISTEMA: \n" + ex.Message);
+                // Captura e trata outras exceções
+                this.ShowNotify(NotifyType.erro, "OCORREU ALGUM ERRO DO SISTEMA: \n" + ex.Message);
             }
+            finally
+            {
+                // Fecha a tela de progresso, independentemente do resultado
+                if (telaProgress != null && !telaProgress.IsDisposed)
+                {
+                    telaProgress.Invoke((Action)telaProgress.Close);
+                }
+            }
+
         }
 
 
@@ -290,24 +309,12 @@ namespace BravosdomaquisApp
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            showNotify(NotifyType.sucesso, "Mensagem enviada");
+            this.ShowNotify(NotifyType.sucesso, "Mensagem enviada");
         }
 
         private async void Socios_Load(object sender, EventArgs e)
         {
-            try
-            {
-                var result = await ServiceBase.service().GetAsync<Collection<Socio>>("Socio");
-                if (result != null)
-                {
-                    socioBindingSource.DataSource = result;
-                }
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
+            //await getSocios();
         }
 
         private void Socios_VisibleChanged(object sender, EventArgs e)
@@ -359,13 +366,13 @@ namespace BravosdomaquisApp
             catch (Exception ex)
             {
 
-                showNotify(NotifyType.erro, ex.Message);
+                this.ShowNotify(NotifyType.erro, ex.Message);
             }
         }
 
         private void btnVerAnexo2_Click(object sender, EventArgs e)
         {
-            showNotify(NotifyType.informacao, "Sem nenhum documento!");
+            this.ShowNotify(NotifyType.informacao, "Sem nenhum documento!");
         }
 
         private void label3_Click(object sender, EventArgs e)

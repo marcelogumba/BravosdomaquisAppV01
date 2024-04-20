@@ -82,6 +82,13 @@
             this.btnReprovar = new Guna.UI.WinForms.GunaButton();
             this.lblDetalhesInscri = new System.Windows.Forms.Label();
             this.DataGridViewSociosInscritos = new Guna.UI.WinForms.GunaDataGridView();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sobrenomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nacionalidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataInscricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ViewDetail = new System.Windows.Forms.DataGridViewImageColumn();
+            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblSocIncri = new System.Windows.Forms.Label();
             this.lblInfoListaSociosInscri = new System.Windows.Forms.Label();
             this.lblVoltarr = new System.Windows.Forms.Label();
@@ -91,10 +98,6 @@
             this.panelVerSociosExistentes = new Guna.UI.WinForms.GunaShadowPanel();
             this.panelSociosExistentes = new Guna.UI.WinForms.GunaShadowPanel();
             this.DataGridViewSociosExistentes = new Guna.UI.WinForms.GunaDataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblSociosexis = new System.Windows.Forms.Label();
             this.lblInfoSocExi = new System.Windows.Forms.Label();
             this.lblVoltarSoc = new System.Windows.Forms.Label();
@@ -104,13 +107,13 @@
             this.contextMenuDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnDetalhesInscricaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sobrenomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nacionalidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataInscricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ViewDetail = new System.Windows.Forms.DataGridViewImageColumn();
+            this.nomeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sobrenomeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nacionalidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataNascimentoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panelSocios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelVerSociosInscritos.SuspendLayout();
@@ -120,13 +123,14 @@
             this.groupPDadosCand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagSocio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSociosInscritos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
             this.gunaShadowPanel9.SuspendLayout();
             this.panelVerSociosExistentes.SuspendLayout();
             this.panelSociosExistentes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSociosExistentes)).BeginInit();
             this.gunaShadowPanel5.SuspendLayout();
             this.contextMenuDataGrid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSocios
@@ -921,6 +925,56 @@
             this.DataGridViewSociosInscritos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewSociosInscritos_CellContentClick);
             this.DataGridViewSociosInscritos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DataGridViewSociosInscritos_MouseClick);
             // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sobrenomeDataGridViewTextBoxColumn
+            // 
+            this.sobrenomeDataGridViewTextBoxColumn.DataPropertyName = "Sobrenome";
+            this.sobrenomeDataGridViewTextBoxColumn.HeaderText = "Sobrenome";
+            this.sobrenomeDataGridViewTextBoxColumn.Name = "sobrenomeDataGridViewTextBoxColumn";
+            this.sobrenomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nacionalidadeDataGridViewTextBoxColumn
+            // 
+            this.nacionalidadeDataGridViewTextBoxColumn.DataPropertyName = "Nacionalidade";
+            this.nacionalidadeDataGridViewTextBoxColumn.HeaderText = "Nacionalidade";
+            this.nacionalidadeDataGridViewTextBoxColumn.Name = "nacionalidadeDataGridViewTextBoxColumn";
+            this.nacionalidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataNascimentoDataGridViewTextBoxColumn
+            // 
+            this.dataNascimentoDataGridViewTextBoxColumn.DataPropertyName = "DataNascimento";
+            this.dataNascimentoDataGridViewTextBoxColumn.HeaderText = "DataNascimento";
+            this.dataNascimentoDataGridViewTextBoxColumn.Name = "dataNascimentoDataGridViewTextBoxColumn";
+            this.dataNascimentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataInscricaoDataGridViewTextBoxColumn
+            // 
+            this.dataInscricaoDataGridViewTextBoxColumn.DataPropertyName = "DataInscricao";
+            this.dataInscricaoDataGridViewTextBoxColumn.HeaderText = "DataInscricao";
+            this.dataInscricaoDataGridViewTextBoxColumn.Name = "dataInscricaoDataGridViewTextBoxColumn";
+            this.dataInscricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ViewDetail
+            // 
+            this.ViewDetail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ViewDetail.Description = "Ver detalhes";
+            this.ViewDetail.FillWeight = 50F;
+            this.ViewDetail.HeaderText = "";
+            this.ViewDetail.Image = global::BravosdomaquisApp.Properties.Resources.icons8_ver_detalhes_24;
+            this.ViewDetail.Name = "ViewDetail";
+            this.ViewDetail.ReadOnly = true;
+            this.ViewDetail.Width = 50;
+            // 
+            // socioBindingSource
+            // 
+            this.socioBindingSource.DataSource = typeof(Maquis.Models.Domain.Socio);
+            // 
             // lblSocIncri
             // 
             this.lblSocIncri.AutoSize = true;
@@ -1039,11 +1093,14 @@
             // 
             // DataGridViewSociosExistentes
             // 
+            this.DataGridViewSociosExistentes.AllowUserToAddRows = false;
+            this.DataGridViewSociosExistentes.AllowUserToDeleteRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             this.DataGridViewSociosExistentes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridViewSociosExistentes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridViewSociosExistentes.AutoGenerateColumns = false;
             this.DataGridViewSociosExistentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridViewSociosExistentes.BackgroundColor = System.Drawing.Color.LightSlateGray;
             this.DataGridViewSociosExistentes.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -1058,10 +1115,13 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridViewSociosExistentes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridViewSociosExistentes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
+            this.nomeDataGridViewTextBoxColumn1,
+            this.sobrenomeDataGridViewTextBoxColumn1,
+            this.nacionalidadeDataGridViewTextBoxColumn1,
+            this.dataNascimentoDataGridViewTextBoxColumn1,
+            this.classeDataGridViewTextBoxColumn,
             this.dataGridViewTextBoxColumn4});
+            this.DataGridViewSociosExistentes.DataSource = this.bindingSource1;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSlateGray;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -1074,6 +1134,7 @@
             this.DataGridViewSociosExistentes.GridColor = System.Drawing.Color.Gray;
             this.DataGridViewSociosExistentes.Location = new System.Drawing.Point(33, 69);
             this.DataGridViewSociosExistentes.Name = "DataGridViewSociosExistentes";
+            this.DataGridViewSociosExistentes.ReadOnly = true;
             this.DataGridViewSociosExistentes.RowHeadersVisible = false;
             this.DataGridViewSociosExistentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGridViewSociosExistentes.Size = new System.Drawing.Size(33, 423);
@@ -1092,7 +1153,7 @@
             this.DataGridViewSociosExistentes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.DataGridViewSociosExistentes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridViewSociosExistentes.ThemeStyle.HeaderStyle.Height = 23;
-            this.DataGridViewSociosExistentes.ThemeStyle.ReadOnly = false;
+            this.DataGridViewSociosExistentes.ThemeStyle.ReadOnly = true;
             this.DataGridViewSociosExistentes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.LightSlateGray;
             this.DataGridViewSociosExistentes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewSociosExistentes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -1100,26 +1161,6 @@
             this.DataGridViewSociosExistentes.ThemeStyle.RowsStyle.Height = 22;
             this.DataGridViewSociosExistentes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.DataGridViewSociosExistentes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "BI";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "--";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // lblSociosexis
             // 
@@ -1226,55 +1267,50 @@
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 861;
             // 
-            // socioBindingSource
+            // nomeDataGridViewTextBoxColumn1
             // 
-            this.socioBindingSource.DataSource = typeof(Maquis.Models.Domain.Socio);
+            this.nomeDataGridViewTextBoxColumn1.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn1.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn1.Name = "nomeDataGridViewTextBoxColumn1";
+            this.nomeDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // nomeDataGridViewTextBoxColumn
+            // sobrenomeDataGridViewTextBoxColumn1
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sobrenomeDataGridViewTextBoxColumn1.DataPropertyName = "Sobrenome";
+            this.sobrenomeDataGridViewTextBoxColumn1.HeaderText = "Sobrenome";
+            this.sobrenomeDataGridViewTextBoxColumn1.Name = "sobrenomeDataGridViewTextBoxColumn1";
+            this.sobrenomeDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // sobrenomeDataGridViewTextBoxColumn
+            // nacionalidadeDataGridViewTextBoxColumn1
             // 
-            this.sobrenomeDataGridViewTextBoxColumn.DataPropertyName = "Sobrenome";
-            this.sobrenomeDataGridViewTextBoxColumn.HeaderText = "Sobrenome";
-            this.sobrenomeDataGridViewTextBoxColumn.Name = "sobrenomeDataGridViewTextBoxColumn";
-            this.sobrenomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nacionalidadeDataGridViewTextBoxColumn1.DataPropertyName = "Nacionalidade";
+            this.nacionalidadeDataGridViewTextBoxColumn1.HeaderText = "Nacionalidade";
+            this.nacionalidadeDataGridViewTextBoxColumn1.Name = "nacionalidadeDataGridViewTextBoxColumn1";
+            this.nacionalidadeDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // nacionalidadeDataGridViewTextBoxColumn
+            // dataNascimentoDataGridViewTextBoxColumn1
             // 
-            this.nacionalidadeDataGridViewTextBoxColumn.DataPropertyName = "Nacionalidade";
-            this.nacionalidadeDataGridViewTextBoxColumn.HeaderText = "Nacionalidade";
-            this.nacionalidadeDataGridViewTextBoxColumn.Name = "nacionalidadeDataGridViewTextBoxColumn";
-            this.nacionalidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataNascimentoDataGridViewTextBoxColumn1.DataPropertyName = "DataNascimento";
+            this.dataNascimentoDataGridViewTextBoxColumn1.HeaderText = "Data de Nascimento";
+            this.dataNascimentoDataGridViewTextBoxColumn1.Name = "dataNascimentoDataGridViewTextBoxColumn1";
+            this.dataNascimentoDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // dataNascimentoDataGridViewTextBoxColumn
+            // classeDataGridViewTextBoxColumn
             // 
-            this.dataNascimentoDataGridViewTextBoxColumn.DataPropertyName = "DataNascimento";
-            this.dataNascimentoDataGridViewTextBoxColumn.HeaderText = "DataNascimento";
-            this.dataNascimentoDataGridViewTextBoxColumn.Name = "dataNascimentoDataGridViewTextBoxColumn";
-            this.dataNascimentoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.classeDataGridViewTextBoxColumn.DataPropertyName = "Classe";
+            this.classeDataGridViewTextBoxColumn.HeaderText = "Classe do Sócio";
+            this.classeDataGridViewTextBoxColumn.Name = "classeDataGridViewTextBoxColumn";
+            this.classeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataInscricaoDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.dataInscricaoDataGridViewTextBoxColumn.DataPropertyName = "DataInscricao";
-            this.dataInscricaoDataGridViewTextBoxColumn.HeaderText = "DataInscricao";
-            this.dataInscricaoDataGridViewTextBoxColumn.Name = "dataInscricaoDataGridViewTextBoxColumn";
-            this.dataInscricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.HeaderText = "--";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // ViewDetail
+            // bindingSource1
             // 
-            this.ViewDetail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ViewDetail.Description = "Ver detalhes";
-            this.ViewDetail.FillWeight = 50F;
-            this.ViewDetail.HeaderText = "";
-            this.ViewDetail.Image = global::BravosdomaquisApp.Properties.Resources.icons8_ver_detalhes_24;
-            this.ViewDetail.Name = "ViewDetail";
-            this.ViewDetail.ReadOnly = true;
-            this.ViewDetail.Width = 50;
+            this.bindingSource1.DataSource = typeof(Maquis.Models.Domain.Socio);
             // 
             // Socios
             // 
@@ -1307,6 +1343,7 @@
             this.groupPDadosCand.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagSocio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSociosInscritos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
             this.gunaShadowPanel9.ResumeLayout(false);
             this.gunaShadowPanel9.PerformLayout();
             this.panelVerSociosExistentes.ResumeLayout(false);
@@ -1317,7 +1354,7 @@
             this.gunaShadowPanel5.ResumeLayout(false);
             this.gunaShadowPanel5.PerformLayout();
             this.contextMenuDataGrid.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1368,10 +1405,6 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label txtNomeSocioInscri;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.PictureBox pictureBoxImagSocio;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn bIDataGridViewTextBoxColumn;
@@ -1401,5 +1434,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataInscricaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn ViewDetail;
         private System.Windows.Forms.BindingSource socioBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sobrenomeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nacionalidadeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataNascimentoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn classeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
