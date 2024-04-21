@@ -96,7 +96,7 @@ namespace BravosdomaquisApp
 
         private void btnVerPontuaçoes_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             VerPontuacoes pont = new VerPontuacoes(formModal, modoEscuro, 1);
             pont.Show();

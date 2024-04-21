@@ -51,7 +51,7 @@ namespace BravosdomaquisApp
 
         private void btnVerJornadas_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             infoJornada infoJornada = new infoJornada(formModal, modoEscuro, cbxCampeonato.SelectedItem.ToString());
             infoJornada.Show();
@@ -59,7 +59,7 @@ namespace BravosdomaquisApp
 
         private void btnAddJornadas_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             AddJornadas AddJornadas = new AddJornadas(formModal, modoEscuro, cbxCampeonato.SelectedItem.ToString());
             AddJornadas.Show();

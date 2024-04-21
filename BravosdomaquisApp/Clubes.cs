@@ -65,7 +65,7 @@ namespace BravosdomaquisApp
               //  string historia = DataGridViewListaClubes.CurrentRow.Cells[3].Value.ToString();
                 string redes = DataGridViewListaClubes.CurrentRow.Cells[4].Value.ToString();
 
-                FormBackgroudModal formModal = new FormBackgroudModal();
+                ModalScreen formModal = new ModalScreen();
                 formModal.Show();
                 if (modoEscuro)
                 {
@@ -82,7 +82,7 @@ namespace BravosdomaquisApp
 
         private void btnAddClubes_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             if (modoEscuro)
             {

@@ -83,7 +83,7 @@ namespace BravosdomaquisApp
             if (DataGridViewNossosMembros.Columns[e.ColumnIndex].Name == "Detalhes")
             {
                 
-                FormBackgroudModal formModal = new FormBackgroudModal();
+                ModalScreen formModal = new ModalScreen();
                 formModal.Show();
                 if (modoEscuro)
                 {
@@ -142,7 +142,7 @@ namespace BravosdomaquisApp
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             if (modoEscuro)
             {

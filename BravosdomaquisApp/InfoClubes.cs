@@ -54,7 +54,7 @@ namespace BravosdomaquisApp
 
         private void btnEditarInfoSite_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             EditarInfoSite EditarInfoSite = new EditarInfoSite(formModal, modoEscuro);
             EditarInfoSite.Show();

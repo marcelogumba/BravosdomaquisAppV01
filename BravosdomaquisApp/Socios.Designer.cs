@@ -73,7 +73,6 @@
             this.txtTelefoneSocioInscri = new System.Windows.Forms.Label();
             this.txtEmailSocioInscri = new System.Windows.Forms.Label();
             this.lblemail = new System.Windows.Forms.Label();
-            this.pictureBoxImagSocio = new System.Windows.Forms.PictureBox();
             this.btnNotificar = new Guna.UI.WinForms.GunaButton();
             this.btnAprovar = new Guna.UI.WinForms.GunaButton();
             this.btnCancelarr = new Guna.UI.WinForms.GunaButton();
@@ -98,6 +97,13 @@
             this.panelVerSociosExistentes = new Guna.UI.WinForms.GunaShadowPanel();
             this.panelSociosExistentes = new Guna.UI.WinForms.GunaShadowPanel();
             this.DataGridViewSociosExistentes = new Guna.UI.WinForms.GunaDataGridView();
+            this.nomeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sobrenomeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nacionalidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataNascimentoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblSociosexis = new System.Windows.Forms.Label();
             this.lblInfoSocExi = new System.Windows.Forms.Label();
             this.lblVoltarSoc = new System.Windows.Forms.Label();
@@ -107,13 +113,7 @@
             this.contextMenuDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnDetalhesInscricaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.nomeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sobrenomeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nacionalidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataNascimentoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBoxImagSocio = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panelSocios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelVerSociosInscritos.SuspendLayout();
@@ -121,16 +121,16 @@
             this.panelAprovReproNotify.SuspendLayout();
             this.gunaLinePanel2.SuspendLayout();
             this.groupPDadosCand.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagSocio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSociosInscritos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
             this.gunaShadowPanel9.SuspendLayout();
             this.panelVerSociosExistentes.SuspendLayout();
             this.panelSociosExistentes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSociosExistentes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.gunaShadowPanel5.SuspendLayout();
             this.contextMenuDataGrid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagSocio)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSocios
@@ -317,6 +317,7 @@
             this.panelAprovReproNotify.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelAprovReproNotify.BackColor = System.Drawing.Color.Transparent;
             this.panelAprovReproNotify.BaseColor = System.Drawing.Color.Gainsboro;
+            this.panelAprovReproNotify.Controls.Add(this.pictureBoxImagSocio);
             this.panelAprovReproNotify.Controls.Add(this.lblFecharMensagemMot);
             this.panelAprovReproNotify.Controls.Add(this.lblDaTxtSMSMotivcacao);
             this.panelAprovReproNotify.Controls.Add(this.txtMensagemMotivacao);
@@ -324,7 +325,6 @@
             this.panelAprovReproNotify.Controls.Add(this.gunaLinePanel2);
             this.panelAprovReproNotify.Controls.Add(this.label1);
             this.panelAprovReproNotify.Controls.Add(this.groupPDadosCand);
-            this.panelAprovReproNotify.Controls.Add(this.pictureBoxImagSocio);
             this.panelAprovReproNotify.Controls.Add(this.btnNotificar);
             this.panelAprovReproNotify.Controls.Add(this.btnAprovar);
             this.panelAprovReproNotify.Controls.Add(this.btnCancelarr);
@@ -336,7 +336,7 @@
             this.panelAprovReproNotify.Name = "panelAprovReproNotify";
             this.panelAprovReproNotify.Radius = 10;
             this.panelAprovReproNotify.ShadowColor = System.Drawing.Color.Black;
-            this.panelAprovReproNotify.Size = new System.Drawing.Size(35, 451);
+            this.panelAprovReproNotify.Size = new System.Drawing.Size(898, 451);
             this.panelAprovReproNotify.TabIndex = 37;
             this.panelAprovReproNotify.Visible = false;
             // 
@@ -346,7 +346,7 @@
             this.lblFecharMensagemMot.AutoSize = true;
             this.lblFecharMensagemMot.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecharMensagemMot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(87)))), ((int)(((byte)(165)))));
-            this.lblFecharMensagemMot.Location = new System.Drawing.Point(-60, 79);
+            this.lblFecharMensagemMot.Location = new System.Drawing.Point(803, 79);
             this.lblFecharMensagemMot.Name = "lblFecharMensagemMot";
             this.lblFecharMensagemMot.Size = new System.Drawing.Size(51, 15);
             this.lblFecharMensagemMot.TabIndex = 64;
@@ -387,7 +387,7 @@
             this.txtMensagemMotivacao.Radius = 8;
             this.txtMensagemMotivacao.ReadOnly = true;
             this.txtMensagemMotivacao.SelectedText = "";
-            this.txtMensagemMotivacao.Size = new System.Drawing.Size(0, 303);
+            this.txtMensagemMotivacao.Size = new System.Drawing.Size(863, 303);
             this.txtMensagemMotivacao.TabIndex = 62;
             this.txtMensagemMotivacao.TextOffsetX = 6;
             this.txtMensagemMotivacao.Visible = false;
@@ -690,17 +690,6 @@
             this.lblemail.TabIndex = 54;
             this.lblemail.Text = "Email:";
             // 
-            // pictureBoxImagSocio
-            // 
-            this.pictureBoxImagSocio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxImagSocio.Image = global::BravosdomaquisApp.Properties.Resources.userIMG;
-            this.pictureBoxImagSocio.Location = new System.Drawing.Point(144, 91);
-            this.pictureBoxImagSocio.Name = "pictureBoxImagSocio";
-            this.pictureBoxImagSocio.Size = new System.Drawing.Size(300, 300);
-            this.pictureBoxImagSocio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxImagSocio.TabIndex = 56;
-            this.pictureBoxImagSocio.TabStop = false;
-            // 
             // btnNotificar
             // 
             this.btnNotificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -772,7 +761,7 @@
             this.btnCancelarr.Image = global::BravosdomaquisApp.Properties.Resources.x;
             this.btnCancelarr.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCancelarr.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnCancelarr.Location = new System.Drawing.Point(-28, 18);
+            this.btnCancelarr.Location = new System.Drawing.Point(835, 18);
             this.btnCancelarr.Name = "btnCancelarr";
             this.btnCancelarr.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(67)))), ((int)(((byte)(145)))));
             this.btnCancelarr.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -793,7 +782,7 @@
             this.lblCancelarr.AutoSize = true;
             this.lblCancelarr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.lblCancelarr.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.lblCancelarr.Location = new System.Drawing.Point(-39, 50);
+            this.lblCancelarr.Location = new System.Drawing.Point(824, 50);
             this.lblCancelarr.Name = "lblCancelarr";
             this.lblCancelarr.Size = new System.Drawing.Size(49, 13);
             this.lblCancelarr.TabIndex = 40;
@@ -1162,6 +1151,51 @@
             this.DataGridViewSociosExistentes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.DataGridViewSociosExistentes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
             // 
+            // nomeDataGridViewTextBoxColumn1
+            // 
+            this.nomeDataGridViewTextBoxColumn1.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn1.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn1.Name = "nomeDataGridViewTextBoxColumn1";
+            this.nomeDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // sobrenomeDataGridViewTextBoxColumn1
+            // 
+            this.sobrenomeDataGridViewTextBoxColumn1.DataPropertyName = "Sobrenome";
+            this.sobrenomeDataGridViewTextBoxColumn1.HeaderText = "Sobrenome";
+            this.sobrenomeDataGridViewTextBoxColumn1.Name = "sobrenomeDataGridViewTextBoxColumn1";
+            this.sobrenomeDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // nacionalidadeDataGridViewTextBoxColumn1
+            // 
+            this.nacionalidadeDataGridViewTextBoxColumn1.DataPropertyName = "Nacionalidade";
+            this.nacionalidadeDataGridViewTextBoxColumn1.HeaderText = "Nacionalidade";
+            this.nacionalidadeDataGridViewTextBoxColumn1.Name = "nacionalidadeDataGridViewTextBoxColumn1";
+            this.nacionalidadeDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataNascimentoDataGridViewTextBoxColumn1
+            // 
+            this.dataNascimentoDataGridViewTextBoxColumn1.DataPropertyName = "DataNascimento";
+            this.dataNascimentoDataGridViewTextBoxColumn1.HeaderText = "Data de Nascimento";
+            this.dataNascimentoDataGridViewTextBoxColumn1.Name = "dataNascimentoDataGridViewTextBoxColumn1";
+            this.dataNascimentoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // classeDataGridViewTextBoxColumn
+            // 
+            this.classeDataGridViewTextBoxColumn.DataPropertyName = "Classe";
+            this.classeDataGridViewTextBoxColumn.HeaderText = "Classe do Sócio";
+            this.classeDataGridViewTextBoxColumn.Name = "classeDataGridViewTextBoxColumn";
+            this.classeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "--";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(Maquis.Models.Domain.Socio);
+            // 
             // lblSociosexis
             // 
             this.lblSociosexis.AutoSize = true;
@@ -1267,50 +1301,16 @@
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 861;
             // 
-            // nomeDataGridViewTextBoxColumn1
+            // pictureBoxImagSocio
             // 
-            this.nomeDataGridViewTextBoxColumn1.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn1.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn1.Name = "nomeDataGridViewTextBoxColumn1";
-            this.nomeDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // sobrenomeDataGridViewTextBoxColumn1
-            // 
-            this.sobrenomeDataGridViewTextBoxColumn1.DataPropertyName = "Sobrenome";
-            this.sobrenomeDataGridViewTextBoxColumn1.HeaderText = "Sobrenome";
-            this.sobrenomeDataGridViewTextBoxColumn1.Name = "sobrenomeDataGridViewTextBoxColumn1";
-            this.sobrenomeDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // nacionalidadeDataGridViewTextBoxColumn1
-            // 
-            this.nacionalidadeDataGridViewTextBoxColumn1.DataPropertyName = "Nacionalidade";
-            this.nacionalidadeDataGridViewTextBoxColumn1.HeaderText = "Nacionalidade";
-            this.nacionalidadeDataGridViewTextBoxColumn1.Name = "nacionalidadeDataGridViewTextBoxColumn1";
-            this.nacionalidadeDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataNascimentoDataGridViewTextBoxColumn1
-            // 
-            this.dataNascimentoDataGridViewTextBoxColumn1.DataPropertyName = "DataNascimento";
-            this.dataNascimentoDataGridViewTextBoxColumn1.HeaderText = "Data de Nascimento";
-            this.dataNascimentoDataGridViewTextBoxColumn1.Name = "dataNascimentoDataGridViewTextBoxColumn1";
-            this.dataNascimentoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // classeDataGridViewTextBoxColumn
-            // 
-            this.classeDataGridViewTextBoxColumn.DataPropertyName = "Classe";
-            this.classeDataGridViewTextBoxColumn.HeaderText = "Classe do Sócio";
-            this.classeDataGridViewTextBoxColumn.Name = "classeDataGridViewTextBoxColumn";
-            this.classeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "--";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(Maquis.Models.Domain.Socio);
+            this.pictureBoxImagSocio.Image = global::BravosdomaquisApp.Properties.Resources.userIMG;
+            this.pictureBoxImagSocio.ImageRotate = 0F;
+            this.pictureBoxImagSocio.Location = new System.Drawing.Point(571, 77);
+            this.pictureBoxImagSocio.Name = "pictureBoxImagSocio";
+            this.pictureBoxImagSocio.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pictureBoxImagSocio.Size = new System.Drawing.Size(315, 314);
+            this.pictureBoxImagSocio.TabIndex = 38;
+            this.pictureBoxImagSocio.TabStop = false;
             // 
             // Socios
             // 
@@ -1341,7 +1341,6 @@
             this.gunaLinePanel2.PerformLayout();
             this.groupPDadosCand.ResumeLayout(false);
             this.groupPDadosCand.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagSocio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSociosInscritos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
             this.gunaShadowPanel9.ResumeLayout(false);
@@ -1351,10 +1350,11 @@
             this.panelSociosExistentes.ResumeLayout(false);
             this.panelSociosExistentes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewSociosExistentes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.gunaShadowPanel5.ResumeLayout(false);
             this.gunaShadowPanel5.PerformLayout();
             this.contextMenuDataGrid.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagSocio)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1405,7 +1405,6 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label txtNomeSocioInscri;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.PictureBox pictureBoxImagSocio;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn bIDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label txtTipoSocio;
@@ -1441,5 +1440,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn classeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pictureBoxImagSocio;
     }
 }

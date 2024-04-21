@@ -7,13 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BravosdomaquisApp.Config;
+using System.Collections.ObjectModel;
+using Maquis.Models.Domain;
+using BravosdomaquisApp.ExtensionMethod;
 
 namespace BravosdomaquisApp
 {
     public partial class Bilhete : UserControl
     {
         bool modoEscuro;
-        public Bilhete()
+        private Form ParentScreen { get; set; }
+        public Bilhete(Form p)
         {
             InitializeComponent();
 
@@ -28,6 +33,7 @@ namespace BravosdomaquisApp
 
             panelReservados.Dock = DockStyle.None;
             panelReservados.Visible = false;
+            this.ParentScreen = p;
         }
         public void darkMode()
         {
@@ -98,6 +104,65 @@ namespace BravosdomaquisApp
             lblBilhetes.ForeColor = Color.FromArgb(27, 87, 165);
         }
       
+        //Dados reais
+        private async Task getDadosReserva()
+        {
+            try
+            {
+                var resultReserva = await ServiceBase.service().GetAsync<Collection<ReservaBilhete>>("Bilhete/Reserva");
+         
+                if(resultReserva != null)
+                {
+                  if(resultReserva.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        if (resultReserva.Data != null)
+                        {
+                            reservaBilheteBindingSource.DataSource = resultReserva.Data;
+                        }
+                           
+                    }
+                    else
+                    {
+                        this.ShowNotify(NotifyType.informacao, "Infelizmente não podemos apresentar nada!");
+                    }
+                }
+               
+            }
+            catch (Exception ex)
+            {
+
+                this.ShowNotify(NotifyType.erro, ex.Message);
+            }
+        }
+        private async Task getDadosBilhete()
+        {
+            try
+            {
+              
+                var resultBilhete = await ServiceBase.service().GetAsync<Collection<Maquis.Models.Domain.Bilhete>>("Bilhete");
+               
+                if (resultBilhete != null)
+                {
+                    if (resultBilhete.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        if (resultBilhete.Data != null)
+                        {
+                            bilheteBindingSource.DataSource= resultBilhete.Data;
+                        }
+
+                    }
+                    else
+                    {
+                        this.ShowNotify(NotifyType.informacao, "Infelizmente não podemos apresentar nada!");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                this.ShowNotify(NotifyType.erro, ex.Message);
+            }
+        }
 
         private void btnVoltarr_Click(object sender, EventArgs e)
         {
@@ -114,7 +179,7 @@ namespace BravosdomaquisApp
             panelReservados.Visible = false;
         }
 
-        private void btnVerGaleria_Click(object sender, EventArgs e)
+        private async void btnVerGaleria_Click(object sender, EventArgs e)
         {
             panelReservados.Dock = DockStyle.Fill;
             panelReservados.Visible = true;
@@ -127,9 +192,10 @@ namespace BravosdomaquisApp
 
             panelAdicionarBilhete.Dock = DockStyle.None;
             panelAdicionarBilhete.Visible = false;
+            await getDadosReserva();
         }
 
-        private void btnBilhetesNor_Click(object sender, EventArgs e)
+        private async void btnBilhetesNor_Click(object sender, EventArgs e)
         {
             panelBilhetesNor.Dock = DockStyle.Fill;
             panelBilhetesNor.Visible = true;
@@ -142,6 +208,8 @@ namespace BravosdomaquisApp
 
             panelReservados.Dock = DockStyle.None;
             panelReservados.Visible = false;
+
+            await getDadosBilhete();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

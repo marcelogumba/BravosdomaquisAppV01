@@ -38,26 +38,54 @@
             this.pnlLimiteLatDire = new System.Windows.Forms.Panel();
             this.panelMenuTop = new System.Windows.Forms.Panel();
             this.lblMenu = new System.Windows.Forms.Label();
+            this.btnMenu = new BravosdomaquisApp.Controls.ButtunUI();
             this.panelMenuCentro = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
             this.containerGestClube = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.ptGestClube = new System.Windows.Forms.PictureBox();
+            this.btnGestClube = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnEquipaTec = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnJogadores = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnJogosMaquis = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnGalery = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnInfoClube = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnBilhetes = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnMemorial = new BravosdomaquisApp.Controls.ButtunUI();
             this.conteinerCampeonato = new System.Windows.Forms.FlowLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.ptCampeo = new System.Windows.Forms.PictureBox();
+            this.btnCampeonato = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnResulatdos = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnJogos = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnJornadas = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnPontuacoes = new BravosdomaquisApp.Controls.ButtunUI();
             this.containerEquipas = new System.Windows.Forms.FlowLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.ptEquipas = new System.Windows.Forms.PictureBox();
+            this.btnEquipas = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnEstadios = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnClubes = new BravosdomaquisApp.Controls.ButtunUI();
             this.containerInformacoes = new System.Windows.Forms.FlowLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.ptInformacoes = new System.Windows.Forms.PictureBox();
+            this.btnInformacoes = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnBannerr = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnArquivos = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnContactos = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnNoticias = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnNewslatter = new BravosdomaquisApp.Controls.ButtunUI();
             this.containerGerencia = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ptGerencia = new System.Windows.Forms.PictureBox();
+            this.btnGerencia = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnMemDaDirecao = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnSocios = new BravosdomaquisApp.Controls.ButtunUI();
+            this.btnParceiros = new BravosdomaquisApp.Controls.ButtunUI();
             this.panelLogout = new System.Windows.Forms.Panel();
             this.pictUser = new System.Windows.Forms.PictureBox();
             this.lblUserLogado = new System.Windows.Forms.Label();
+            this.btnLogout = new BravosdomaquisApp.Controls.ButtunUI();
             this.timerCampeonato = new System.Windows.Forms.Timer(this.components);
             this.timerGestClube = new System.Windows.Forms.Timer(this.components);
             this.timerInformacoes = new System.Windows.Forms.Timer(this.components);
@@ -67,34 +95,6 @@
             this.panelMenu1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnGestClube = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnEquipaTec = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnJogadores = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnJogosMaquis = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnGalery = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnInfoClube = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnBilhetes = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnMemorial = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnCampeonato = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnResulatdos = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnJogos = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnJornadas = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnPontuacoes = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnEquipas = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnEstadios = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnClubes = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnInformacoes = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnBannerr = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnArquivos = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnContactos = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnNoticias = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnNewslatter = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnGerencia = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnMemDaDirecao = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnSocios = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnParceiros = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnMenu = new BravosdomaquisApp.Controls.ButtunUI();
-            this.btnLogout = new BravosdomaquisApp.Controls.ButtunUI();
             this.pnlSuperior = new RoundPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMaximizar = new BravosdomaquisApp.Controls.ButtunUI();
@@ -109,6 +109,8 @@
             this.pnlBarraSeparadora = new System.Windows.Forms.Panel();
             this.lblNomeClube = new System.Windows.Forms.Label();
             this.pictImageClube = new System.Windows.Forms.PictureBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panelMenuTop.SuspendLayout();
             this.panelMenuCentro.SuspendLayout();
             this.containerGestClube.SuspendLayout();
@@ -142,15 +144,15 @@
             this.pnlLimiteSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLimiteSuperior.Location = new System.Drawing.Point(0, 45);
             this.pnlLimiteSuperior.Name = "pnlLimiteSuperior";
-            this.pnlLimiteSuperior.Size = new System.Drawing.Size(1252, 10);
+            this.pnlLimiteSuperior.Size = new System.Drawing.Size(1280, 10);
             this.pnlLimiteSuperior.TabIndex = 6;
             // 
             // pnlLimiteInferior
             // 
             this.pnlLimiteInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlLimiteInferior.Location = new System.Drawing.Point(0, 684);
+            this.pnlLimiteInferior.Location = new System.Drawing.Point(0, 710);
             this.pnlLimiteInferior.Name = "pnlLimiteInferior";
-            this.pnlLimiteInferior.Size = new System.Drawing.Size(1252, 10);
+            this.pnlLimiteInferior.Size = new System.Drawing.Size(1280, 10);
             this.pnlLimiteInferior.TabIndex = 7;
             // 
             // pnlLimiteLatEsq
@@ -158,7 +160,7 @@
             this.pnlLimiteLatEsq.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLimiteLatEsq.Location = new System.Drawing.Point(0, 55);
             this.pnlLimiteLatEsq.Name = "pnlLimiteLatEsq";
-            this.pnlLimiteLatEsq.Size = new System.Drawing.Size(5, 629);
+            this.pnlLimiteLatEsq.Size = new System.Drawing.Size(5, 655);
             this.pnlLimiteLatEsq.TabIndex = 8;
             // 
             // timerMenu
@@ -171,16 +173,16 @@
             this.pnlLimiteCentro.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLimiteCentro.Location = new System.Drawing.Point(257, 55);
             this.pnlLimiteCentro.Name = "pnlLimiteCentro";
-            this.pnlLimiteCentro.Size = new System.Drawing.Size(5, 629);
+            this.pnlLimiteCentro.Size = new System.Drawing.Size(5, 655);
             this.pnlLimiteCentro.TabIndex = 10;
             // 
             // pnlLimiteLatDire
             // 
             this.pnlLimiteLatDire.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlLimiteLatDire.Location = new System.Drawing.Point(1247, 55);
+            this.pnlLimiteLatDire.Location = new System.Drawing.Point(1275, 55);
             this.pnlLimiteLatDire.MaximumSize = new System.Drawing.Size(10, 0);
             this.pnlLimiteLatDire.Name = "pnlLimiteLatDire";
-            this.pnlLimiteLatDire.Size = new System.Drawing.Size(5, 629);
+            this.pnlLimiteLatDire.Size = new System.Drawing.Size(5, 655);
             this.pnlLimiteLatDire.TabIndex = 11;
             // 
             // panelMenuTop
@@ -207,6 +209,25 @@
             this.lblMenu.Text = "Ínicio";
             this.lblMenu.Click += new System.EventHandler(this.lblMenu_Click);
             // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btnMenu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btnMenu.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMenu.BorderRadius = 10;
+            this.btnMenu.BorderSize = 0;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
+            this.btnMenu.Image = global::BravosdomaquisApp.Properties.Resources.iconInicio;
+            this.btnMenu.Location = new System.Drawing.Point(4, 1);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(50, 37);
+            this.btnMenu.TabIndex = 10;
+            this.btnMenu.TextColor = System.Drawing.Color.White;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.buttunUI3_Click);
+            // 
             // panelMenuCentro
             // 
             this.panelMenuCentro.Controls.Add(this.gunaVScrollBar1);
@@ -219,7 +240,7 @@
             this.panelMenuCentro.Location = new System.Drawing.Point(0, 60);
             this.panelMenuCentro.Margin = new System.Windows.Forms.Padding(0);
             this.panelMenuCentro.Name = "panelMenuCentro";
-            this.panelMenuCentro.Size = new System.Drawing.Size(252, 469);
+            this.panelMenuCentro.Size = new System.Drawing.Size(252, 495);
             this.panelMenuCentro.TabIndex = 1;
             // 
             // gunaVScrollBar1
@@ -272,241 +293,6 @@
             this.ptGestClube.TabIndex = 19;
             this.ptGestClube.TabStop = false;
             this.ptGestClube.Click += new System.EventHandler(this.ptGestClube_Click);
-            // 
-            // conteinerCampeonato
-            // 
-            this.conteinerCampeonato.BackColor = System.Drawing.Color.LightGray;
-            this.conteinerCampeonato.Controls.Add(this.panel7);
-            this.conteinerCampeonato.Controls.Add(this.btnResulatdos);
-            this.conteinerCampeonato.Controls.Add(this.btnJogos);
-            this.conteinerCampeonato.Controls.Add(this.btnJornadas);
-            this.conteinerCampeonato.Controls.Add(this.btnPontuacoes);
-            this.conteinerCampeonato.Location = new System.Drawing.Point(0, 46);
-            this.conteinerCampeonato.Margin = new System.Windows.Forms.Padding(0);
-            this.conteinerCampeonato.Name = "conteinerCampeonato";
-            this.conteinerCampeonato.Size = new System.Drawing.Size(252, 40);
-            this.conteinerCampeonato.TabIndex = 14;
-            this.conteinerCampeonato.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.ptCampeo);
-            this.panel7.Controls.Add(this.btnCampeonato);
-            this.panel7.Location = new System.Drawing.Point(3, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(252, 40);
-            this.panel7.TabIndex = 18;
-            // 
-            // ptCampeo
-            // 
-            this.ptCampeo.BackColor = System.Drawing.Color.Transparent;
-            this.ptCampeo.Image = global::BravosdomaquisApp.Properties.Resources.baixoLightt;
-            this.ptCampeo.Location = new System.Drawing.Point(191, -1);
-            this.ptCampeo.Name = "ptCampeo";
-            this.ptCampeo.Size = new System.Drawing.Size(40, 40);
-            this.ptCampeo.TabIndex = 20;
-            this.ptCampeo.TabStop = false;
-            this.ptCampeo.Click += new System.EventHandler(this.ptCampeo_Click);
-            // 
-            // containerEquipas
-            // 
-            this.containerEquipas.BackColor = System.Drawing.Color.LightGray;
-            this.containerEquipas.Controls.Add(this.panel8);
-            this.containerEquipas.Controls.Add(this.btnEstadios);
-            this.containerEquipas.Controls.Add(this.btnClubes);
-            this.containerEquipas.Location = new System.Drawing.Point(0, 86);
-            this.containerEquipas.Margin = new System.Windows.Forms.Padding(0);
-            this.containerEquipas.Name = "containerEquipas";
-            this.containerEquipas.Size = new System.Drawing.Size(252, 40);
-            this.containerEquipas.TabIndex = 16;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.Controls.Add(this.ptEquipas);
-            this.panel8.Controls.Add(this.btnEquipas);
-            this.panel8.Location = new System.Drawing.Point(3, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(248, 40);
-            this.panel8.TabIndex = 12;
-            // 
-            // ptEquipas
-            // 
-            this.ptEquipas.BackColor = System.Drawing.Color.Transparent;
-            this.ptEquipas.Image = global::BravosdomaquisApp.Properties.Resources.baixoLightt;
-            this.ptEquipas.Location = new System.Drawing.Point(191, -1);
-            this.ptEquipas.Name = "ptEquipas";
-            this.ptEquipas.Size = new System.Drawing.Size(40, 40);
-            this.ptEquipas.TabIndex = 21;
-            this.ptEquipas.TabStop = false;
-            this.ptEquipas.Click += new System.EventHandler(this.ptEquipas_Click);
-            // 
-            // containerInformacoes
-            // 
-            this.containerInformacoes.BackColor = System.Drawing.Color.LightGray;
-            this.containerInformacoes.Controls.Add(this.panel9);
-            this.containerInformacoes.Controls.Add(this.btnBannerr);
-            this.containerInformacoes.Controls.Add(this.btnArquivos);
-            this.containerInformacoes.Controls.Add(this.btnContactos);
-            this.containerInformacoes.Controls.Add(this.btnNoticias);
-            this.containerInformacoes.Controls.Add(this.btnNewslatter);
-            this.containerInformacoes.Location = new System.Drawing.Point(0, 126);
-            this.containerInformacoes.Margin = new System.Windows.Forms.Padding(0);
-            this.containerInformacoes.Name = "containerInformacoes";
-            this.containerInformacoes.Size = new System.Drawing.Size(252, 40);
-            this.containerInformacoes.TabIndex = 16;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.Controls.Add(this.ptInformacoes);
-            this.panel9.Controls.Add(this.btnInformacoes);
-            this.panel9.Location = new System.Drawing.Point(3, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(252, 40);
-            this.panel9.TabIndex = 18;
-            // 
-            // ptInformacoes
-            // 
-            this.ptInformacoes.BackColor = System.Drawing.Color.Transparent;
-            this.ptInformacoes.Image = global::BravosdomaquisApp.Properties.Resources.baixoLightt;
-            this.ptInformacoes.Location = new System.Drawing.Point(191, -1);
-            this.ptInformacoes.Name = "ptInformacoes";
-            this.ptInformacoes.Size = new System.Drawing.Size(39, 40);
-            this.ptInformacoes.TabIndex = 12;
-            this.ptInformacoes.TabStop = false;
-            this.ptInformacoes.Click += new System.EventHandler(this.ptInformacoes_Click);
-            // 
-            // containerGerencia
-            // 
-            this.containerGerencia.BackColor = System.Drawing.Color.LightGray;
-            this.containerGerencia.Controls.Add(this.panel3);
-            this.containerGerencia.Controls.Add(this.btnMemDaDirecao);
-            this.containerGerencia.Controls.Add(this.btnSocios);
-            this.containerGerencia.Controls.Add(this.btnParceiros);
-            this.containerGerencia.Location = new System.Drawing.Point(0, 166);
-            this.containerGerencia.Margin = new System.Windows.Forms.Padding(0);
-            this.containerGerencia.Name = "containerGerencia";
-            this.containerGerencia.Size = new System.Drawing.Size(248, 40);
-            this.containerGerencia.TabIndex = 17;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.ptGerencia);
-            this.panel3.Controls.Add(this.btnGerencia);
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(252, 40);
-            this.panel3.TabIndex = 0;
-            // 
-            // ptGerencia
-            // 
-            this.ptGerencia.BackColor = System.Drawing.Color.Transparent;
-            this.ptGerencia.Image = global::BravosdomaquisApp.Properties.Resources.baixoLightt;
-            this.ptGerencia.Location = new System.Drawing.Point(191, -1);
-            this.ptGerencia.Name = "ptGerencia";
-            this.ptGerencia.Size = new System.Drawing.Size(39, 40);
-            this.ptGerencia.TabIndex = 11;
-            this.ptGerencia.TabStop = false;
-            this.ptGerencia.Click += new System.EventHandler(this.ptGerencia_Click);
-            // 
-            // panelLogout
-            // 
-            this.panelLogout.Controls.Add(this.pictUser);
-            this.panelLogout.Controls.Add(this.lblUserLogado);
-            this.panelLogout.Controls.Add(this.btnLogout);
-            this.panelLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelLogout.Location = new System.Drawing.Point(0, 529);
-            this.panelLogout.Margin = new System.Windows.Forms.Padding(0);
-            this.panelLogout.Name = "panelLogout";
-            this.panelLogout.Size = new System.Drawing.Size(252, 100);
-            this.panelLogout.TabIndex = 21;
-            // 
-            // pictUser
-            // 
-            this.pictUser.Image = global::BravosdomaquisApp.Properties.Resources.users;
-            this.pictUser.Location = new System.Drawing.Point(20, 11);
-            this.pictUser.Name = "pictUser";
-            this.pictUser.Size = new System.Drawing.Size(30, 30);
-            this.pictUser.TabIndex = 20;
-            this.pictUser.TabStop = false;
-            // 
-            // lblUserLogado
-            // 
-            this.lblUserLogado.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserLogado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(87)))), ((int)(((byte)(165)))));
-            this.lblUserLogado.Location = new System.Drawing.Point(55, 11);
-            this.lblUserLogado.Name = "lblUserLogado";
-            this.lblUserLogado.Size = new System.Drawing.Size(191, 30);
-            this.lblUserLogado.TabIndex = 20;
-            this.lblUserLogado.Text = "Admin";
-            this.lblUserLogado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // timerCampeonato
-            // 
-            this.timerCampeonato.Interval = 5;
-            this.timerCampeonato.Tick += new System.EventHandler(this.timerCampeonato_Tick);
-            // 
-            // timerGestClube
-            // 
-            this.timerGestClube.Interval = 5;
-            this.timerGestClube.Tick += new System.EventHandler(this.timerGestClube_Tick);
-            // 
-            // timerInformacoes
-            // 
-            this.timerInformacoes.Interval = 5;
-            this.timerInformacoes.Tick += new System.EventHandler(this.timerInformacoes_Tick);
-            // 
-            // timerGerencia
-            // 
-            this.timerGerencia.Interval = 5;
-            this.timerGerencia.Tick += new System.EventHandler(this.timerGerencia_Tick);
-            // 
-            // pnlTelas
-            // 
-            this.pnlTelas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.pnlTelas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTelas.Location = new System.Drawing.Point(262, 55);
-            this.pnlTelas.Name = "pnlTelas";
-            this.pnlTelas.Size = new System.Drawing.Size(985, 629);
-            this.pnlTelas.TabIndex = 14;
-            // 
-            // timerEquipas
-            // 
-            this.timerEquipas.Interval = 5;
-            this.timerEquipas.Tick += new System.EventHandler(this.timerEquipas_Tick);
-            // 
-            // panelMenu1
-            // 
-            this.panelMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.panelMenu1.Controls.Add(this.panelMenuCentro);
-            this.panelMenu1.Controls.Add(this.panel5);
-            this.panelMenu1.Controls.Add(this.panelMenuTop);
-            this.panelMenu1.Controls.Add(this.panelLogout);
-            this.panelMenu1.Controls.Add(this.panel4);
-            this.panelMenu1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu1.Location = new System.Drawing.Point(5, 55);
-            this.panelMenu1.Name = "panelMenu1";
-            this.panelMenu1.Size = new System.Drawing.Size(252, 629);
-            this.panelMenu1.TabIndex = 15;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 50);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(252, 10);
-            this.panel5.TabIndex = 23;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(252, 10);
-            this.panel4.TabIndex = 22;
             // 
             // btnGestClube
             // 
@@ -708,6 +494,42 @@
             this.btnMemorial.UseVisualStyleBackColor = false;
             this.btnMemorial.Click += new System.EventHandler(this.btnMemorial_Click);
             // 
+            // conteinerCampeonato
+            // 
+            this.conteinerCampeonato.BackColor = System.Drawing.Color.LightGray;
+            this.conteinerCampeonato.Controls.Add(this.panel7);
+            this.conteinerCampeonato.Controls.Add(this.btnResulatdos);
+            this.conteinerCampeonato.Controls.Add(this.btnJogos);
+            this.conteinerCampeonato.Controls.Add(this.btnJornadas);
+            this.conteinerCampeonato.Controls.Add(this.btnPontuacoes);
+            this.conteinerCampeonato.Location = new System.Drawing.Point(0, 46);
+            this.conteinerCampeonato.Margin = new System.Windows.Forms.Padding(0);
+            this.conteinerCampeonato.Name = "conteinerCampeonato";
+            this.conteinerCampeonato.Size = new System.Drawing.Size(252, 40);
+            this.conteinerCampeonato.TabIndex = 14;
+            this.conteinerCampeonato.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.ptCampeo);
+            this.panel7.Controls.Add(this.btnCampeonato);
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(252, 40);
+            this.panel7.TabIndex = 18;
+            // 
+            // ptCampeo
+            // 
+            this.ptCampeo.BackColor = System.Drawing.Color.Transparent;
+            this.ptCampeo.Image = global::BravosdomaquisApp.Properties.Resources.baixoLightt;
+            this.ptCampeo.Location = new System.Drawing.Point(191, -1);
+            this.ptCampeo.Name = "ptCampeo";
+            this.ptCampeo.Size = new System.Drawing.Size(40, 40);
+            this.ptCampeo.TabIndex = 20;
+            this.ptCampeo.TabStop = false;
+            this.ptCampeo.Click += new System.EventHandler(this.ptCampeo_Click);
+            // 
             // btnCampeonato
             // 
             this.btnCampeonato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
@@ -833,6 +655,39 @@
             this.btnPontuacoes.UseVisualStyleBackColor = false;
             this.btnPontuacoes.Click += new System.EventHandler(this.btnPontuacoes_Click);
             // 
+            // containerEquipas
+            // 
+            this.containerEquipas.BackColor = System.Drawing.Color.LightGray;
+            this.containerEquipas.Controls.Add(this.panel8);
+            this.containerEquipas.Controls.Add(this.btnEstadios);
+            this.containerEquipas.Controls.Add(this.btnClubes);
+            this.containerEquipas.Location = new System.Drawing.Point(0, 86);
+            this.containerEquipas.Margin = new System.Windows.Forms.Padding(0);
+            this.containerEquipas.Name = "containerEquipas";
+            this.containerEquipas.Size = new System.Drawing.Size(252, 40);
+            this.containerEquipas.TabIndex = 16;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.Controls.Add(this.ptEquipas);
+            this.panel8.Controls.Add(this.btnEquipas);
+            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(248, 40);
+            this.panel8.TabIndex = 12;
+            // 
+            // ptEquipas
+            // 
+            this.ptEquipas.BackColor = System.Drawing.Color.Transparent;
+            this.ptEquipas.Image = global::BravosdomaquisApp.Properties.Resources.baixoLightt;
+            this.ptEquipas.Location = new System.Drawing.Point(191, -1);
+            this.ptEquipas.Name = "ptEquipas";
+            this.ptEquipas.Size = new System.Drawing.Size(40, 40);
+            this.ptEquipas.TabIndex = 21;
+            this.ptEquipas.TabStop = false;
+            this.ptEquipas.Click += new System.EventHandler(this.ptEquipas_Click);
+            // 
             // btnEquipas
             // 
             this.btnEquipas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
@@ -907,6 +762,42 @@
             this.btnClubes.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(87)))), ((int)(((byte)(165)))));
             this.btnClubes.UseVisualStyleBackColor = false;
             this.btnClubes.Click += new System.EventHandler(this.btnClubes_Click);
+            // 
+            // containerInformacoes
+            // 
+            this.containerInformacoes.BackColor = System.Drawing.Color.LightGray;
+            this.containerInformacoes.Controls.Add(this.panel9);
+            this.containerInformacoes.Controls.Add(this.btnBannerr);
+            this.containerInformacoes.Controls.Add(this.btnArquivos);
+            this.containerInformacoes.Controls.Add(this.btnContactos);
+            this.containerInformacoes.Controls.Add(this.btnNoticias);
+            this.containerInformacoes.Controls.Add(this.btnNewslatter);
+            this.containerInformacoes.Location = new System.Drawing.Point(0, 126);
+            this.containerInformacoes.Margin = new System.Windows.Forms.Padding(0);
+            this.containerInformacoes.Name = "containerInformacoes";
+            this.containerInformacoes.Size = new System.Drawing.Size(252, 40);
+            this.containerInformacoes.TabIndex = 16;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.Controls.Add(this.ptInformacoes);
+            this.panel9.Controls.Add(this.btnInformacoes);
+            this.panel9.Location = new System.Drawing.Point(3, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(252, 40);
+            this.panel9.TabIndex = 18;
+            // 
+            // ptInformacoes
+            // 
+            this.ptInformacoes.BackColor = System.Drawing.Color.Transparent;
+            this.ptInformacoes.Image = global::BravosdomaquisApp.Properties.Resources.baixoLightt;
+            this.ptInformacoes.Location = new System.Drawing.Point(191, -1);
+            this.ptInformacoes.Name = "ptInformacoes";
+            this.ptInformacoes.Size = new System.Drawing.Size(39, 40);
+            this.ptInformacoes.TabIndex = 12;
+            this.ptInformacoes.TabStop = false;
+            this.ptInformacoes.Click += new System.EventHandler(this.ptInformacoes_Click);
             // 
             // btnInformacoes
             // 
@@ -1058,6 +949,40 @@
             this.btnNewslatter.UseVisualStyleBackColor = false;
             this.btnNewslatter.Click += new System.EventHandler(this.buttunUI11_Click);
             // 
+            // containerGerencia
+            // 
+            this.containerGerencia.BackColor = System.Drawing.Color.LightGray;
+            this.containerGerencia.Controls.Add(this.panel3);
+            this.containerGerencia.Controls.Add(this.btnMemDaDirecao);
+            this.containerGerencia.Controls.Add(this.btnSocios);
+            this.containerGerencia.Controls.Add(this.btnParceiros);
+            this.containerGerencia.Location = new System.Drawing.Point(0, 166);
+            this.containerGerencia.Margin = new System.Windows.Forms.Padding(0);
+            this.containerGerencia.Name = "containerGerencia";
+            this.containerGerencia.Size = new System.Drawing.Size(248, 40);
+            this.containerGerencia.TabIndex = 17;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.ptGerencia);
+            this.panel3.Controls.Add(this.btnGerencia);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(252, 40);
+            this.panel3.TabIndex = 0;
+            // 
+            // ptGerencia
+            // 
+            this.ptGerencia.BackColor = System.Drawing.Color.Transparent;
+            this.ptGerencia.Image = global::BravosdomaquisApp.Properties.Resources.baixoLightt;
+            this.ptGerencia.Location = new System.Drawing.Point(191, -1);
+            this.ptGerencia.Name = "ptGerencia";
+            this.ptGerencia.Size = new System.Drawing.Size(39, 40);
+            this.ptGerencia.TabIndex = 11;
+            this.ptGerencia.TabStop = false;
+            this.ptGerencia.Click += new System.EventHandler(this.ptGerencia_Click);
+            // 
             // btnGerencia
             // 
             this.btnGerencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
@@ -1158,24 +1083,37 @@
             this.btnParceiros.UseVisualStyleBackColor = false;
             this.btnParceiros.Click += new System.EventHandler(this.btnParceiros_Click);
             // 
-            // btnMenu
+            // panelLogout
             // 
-            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnMenu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnMenu.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnMenu.BorderRadius = 10;
-            this.btnMenu.BorderSize = 0;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.Image = global::BravosdomaquisApp.Properties.Resources.iconInicio;
-            this.btnMenu.Location = new System.Drawing.Point(4, 1);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(50, 37);
-            this.btnMenu.TabIndex = 10;
-            this.btnMenu.TextColor = System.Drawing.Color.White;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.buttunUI3_Click);
+            this.panelLogout.Controls.Add(this.pictUser);
+            this.panelLogout.Controls.Add(this.lblUserLogado);
+            this.panelLogout.Controls.Add(this.btnLogout);
+            this.panelLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelLogout.Location = new System.Drawing.Point(0, 555);
+            this.panelLogout.Margin = new System.Windows.Forms.Padding(0);
+            this.panelLogout.Name = "panelLogout";
+            this.panelLogout.Size = new System.Drawing.Size(252, 100);
+            this.panelLogout.TabIndex = 21;
+            // 
+            // pictUser
+            // 
+            this.pictUser.Image = global::BravosdomaquisApp.Properties.Resources.users;
+            this.pictUser.Location = new System.Drawing.Point(20, 11);
+            this.pictUser.Name = "pictUser";
+            this.pictUser.Size = new System.Drawing.Size(30, 30);
+            this.pictUser.TabIndex = 20;
+            this.pictUser.TabStop = false;
+            // 
+            // lblUserLogado
+            // 
+            this.lblUserLogado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserLogado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(87)))), ((int)(((byte)(165)))));
+            this.lblUserLogado.Location = new System.Drawing.Point(55, 11);
+            this.lblUserLogado.Name = "lblUserLogado";
+            this.lblUserLogado.Size = new System.Drawing.Size(191, 30);
+            this.lblUserLogado.TabIndex = 20;
+            this.lblUserLogado.Text = "Admin";
+            this.lblUserLogado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnLogout
             // 
@@ -1202,6 +1140,70 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // timerCampeonato
+            // 
+            this.timerCampeonato.Interval = 5;
+            this.timerCampeonato.Tick += new System.EventHandler(this.timerCampeonato_Tick);
+            // 
+            // timerGestClube
+            // 
+            this.timerGestClube.Interval = 5;
+            this.timerGestClube.Tick += new System.EventHandler(this.timerGestClube_Tick);
+            // 
+            // timerInformacoes
+            // 
+            this.timerInformacoes.Interval = 5;
+            this.timerInformacoes.Tick += new System.EventHandler(this.timerInformacoes_Tick);
+            // 
+            // timerGerencia
+            // 
+            this.timerGerencia.Interval = 5;
+            this.timerGerencia.Tick += new System.EventHandler(this.timerGerencia_Tick);
+            // 
+            // pnlTelas
+            // 
+            this.pnlTelas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.pnlTelas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTelas.Location = new System.Drawing.Point(262, 55);
+            this.pnlTelas.Name = "pnlTelas";
+            this.pnlTelas.Size = new System.Drawing.Size(1013, 655);
+            this.pnlTelas.TabIndex = 14;
+            // 
+            // timerEquipas
+            // 
+            this.timerEquipas.Interval = 5;
+            this.timerEquipas.Tick += new System.EventHandler(this.timerEquipas_Tick);
+            // 
+            // panelMenu1
+            // 
+            this.panelMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.panelMenu1.Controls.Add(this.panelMenuCentro);
+            this.panelMenu1.Controls.Add(this.panel5);
+            this.panelMenu1.Controls.Add(this.panelMenuTop);
+            this.panelMenu1.Controls.Add(this.panelLogout);
+            this.panelMenu1.Controls.Add(this.panel4);
+            this.panelMenu1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu1.Location = new System.Drawing.Point(5, 55);
+            this.panelMenu1.Name = "panelMenu1";
+            this.panelMenu1.Size = new System.Drawing.Size(252, 655);
+            this.panelMenu1.TabIndex = 15;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 50);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(252, 10);
+            this.panel5.TabIndex = 23;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(252, 10);
+            this.panel4.TabIndex = 22;
+            // 
             // pnlSuperior
             // 
             this.pnlSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(87)))), ((int)(((byte)(165)))));
@@ -1212,7 +1214,7 @@
             this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
             this.pnlSuperior.Name = "pnlSuperior";
-            this.pnlSuperior.Size = new System.Drawing.Size(1252, 45);
+            this.pnlSuperior.Size = new System.Drawing.Size(1280, 45);
             this.pnlSuperior.TabIndex = 5;
             // 
             // panel2
@@ -1227,7 +1229,7 @@
             this.panel2.Controls.Add(this.ptbDarkLight);
             this.panel2.Controls.Add(this.pnlBarraSeparadora);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(532, 0);
+            this.panel2.Location = new System.Drawing.Point(560, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(720, 45);
             this.panel2.TabIndex = 23;
@@ -1379,11 +1381,11 @@
             // lblNomeClube
             // 
             this.lblNomeClube.AutoSize = true;
-            this.lblNomeClube.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeClube.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeClube.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblNomeClube.Location = new System.Drawing.Point(58, 12);
             this.lblNomeClube.Name = "lblNomeClube";
-            this.lblNomeClube.Size = new System.Drawing.Size(198, 22);
+            this.lblNomeClube.Size = new System.Drawing.Size(190, 20);
             this.lblNomeClube.TabIndex = 11;
             this.lblNomeClube.Text = "FC - Bravos do Maquis";
             // 
@@ -1397,11 +1399,23 @@
             this.pictImageClube.TabIndex = 10;
             this.pictImageClube.TabStop = false;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.pnlSuperior;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.panel2;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
             // Principal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1252, 694);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.pnlTelas);
             this.Controls.Add(this.pnlLimiteCentro);
             this.Controls.Add(this.panelMenu1);
@@ -1530,5 +1544,7 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox ptInformacoes;
         private System.Windows.Forms.Panel panel8;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
     }
 }

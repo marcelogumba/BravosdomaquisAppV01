@@ -1,4 +1,5 @@
 ﻿using BravosdomaquisApp.Config;
+using BravosdomaquisApp.ExtensionMethod;
 using Maquis.Models.Domain;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ using System.Windows.Forms;
 
 namespace BravosdomaquisApp
 {
-    public partial class Contacto : Form
+    public partial class Feedbacks : Form
     {
         Form form;
         bool darkmode;
@@ -26,10 +27,10 @@ namespace BravosdomaquisApp
         Object[] txtConteudo;
         Object[] lbLinkElim;
 
-        public Contacto(Form formy, bool darkMode)
+        public Feedbacks(bool darkMode)
         {
             darkmode = darkMode;
-            form = formy;
+            
             InitializeComponent();
 
             if (darkmode)
@@ -176,7 +177,7 @@ namespace BravosdomaquisApp
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
-            form.Close();
+          
         }
 
         private void panelContacto_Paint(object sender, PaintEventArgs e)
@@ -187,11 +188,11 @@ namespace BravosdomaquisApp
         private async void Contacto_Load(object sender, EventArgs e)
         {
             TelaProgress tl = new TelaProgress(true);
-            Thread progressThread = new Thread(() => Application.Run(tl));
-            progressThread.Start();
+          
 
             try
             {
+                this.ShowDialogThreadSafe(tl);
                 var result = await ServiceBase.service().GetAsync<Collection<Feedback>>("Feedback");
                 if (result.Data != null)
                 {
@@ -209,7 +210,7 @@ namespace BravosdomaquisApp
             {
                 tl.Invoke((Action)delegate { tl.Close(); });
                 MessageBox.Show(ex.Message, "ERRO DO SISTEMA");
-            }
+            }finally { tl.Close(); }
         }
     }
 }

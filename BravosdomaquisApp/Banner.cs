@@ -62,7 +62,7 @@ namespace BravosdomaquisApp
             if (DataGridViewContactos.Columns[e.ColumnIndex].Name == "Editar")
             {
 
-                FormBackgroudModal formModal = new FormBackgroudModal();
+                ModalScreen formModal = new ModalScreen();
                 formModal.Show();
                 InfoBanner info = new InfoBanner(formModal, modoEscuro, false);
                 info.Show();
@@ -75,7 +75,7 @@ namespace BravosdomaquisApp
 
         private void btnaddConteudo_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             InfoBanner info = new InfoBanner(formModal, modoEscuro, true);
             info.Show();

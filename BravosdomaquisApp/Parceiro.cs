@@ -110,7 +110,7 @@ namespace BravosdomaquisApp
         }
         private void btnVerParceirosInscritos_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             AddParceiro addParceiro = new AddParceiro(formModal, modoEscuro, true, null);
             addParceiro.Show();
@@ -154,7 +154,7 @@ namespace BravosdomaquisApp
                 object[] dadosParceiro = new object[] { id, nomeParceiro, descricao, tipo, descricaoTipo, redesSociais, imagem };
 
 
-                FormBackgroudModal formModal = new FormBackgroudModal();
+                ModalScreen formModal = new ModalScreen();
                 formModal.Show();
                 AddParceiro addParceiro = new AddParceiro(formModal, modoEscuro, false, dadosParceiro);
                 addParceiro.Show();

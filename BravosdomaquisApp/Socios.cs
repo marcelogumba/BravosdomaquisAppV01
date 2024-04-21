@@ -14,15 +14,18 @@ using System.Net.Http;
 using System.Threading;
 using BravosdomaquisApp.ExtensionMethod;
 using Microsoft.AspNetCore.Http;
+using BravosdomaquisApp.Properties;
 
 namespace BravosdomaquisApp
 {
     public partial class Socios : UserControl
     {
         bool modoEscuro;
-        public Socios()
+        private Form parentScreen { get; set; }
+        public Socios(Form p)
         {
             InitializeComponent();
+            this.parentScreen = p;
 
         
 
@@ -37,8 +40,6 @@ namespace BravosdomaquisApp
 
             panelAprovReproNotify.Width = 919; ;
         }
-
-       
 
         public void darkMode()
         {
@@ -107,8 +108,7 @@ namespace BravosdomaquisApp
 
         private void btnDetalhesInscricaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DataGridViewSociosInscritos.Visible = false;
-            panelAprovReproNotify.Visible = true;
+            //
         }
 
         private void lblBtnCancelar_Click(object sender, EventArgs e)
@@ -148,6 +148,7 @@ namespace BravosdomaquisApp
 
         private async void btnVerSociosInscritos_Click(object sender, EventArgs e)
         {
+            await getSocios();
             panelVerSociosInscritos.Visible = true;
             panelVerSociosInscritos.Dock = DockStyle.Fill;
 
@@ -156,7 +157,7 @@ namespace BravosdomaquisApp
 
             panelVerSociosExistentes.Visible = false;
             panelVerSociosExistentes.Dock = DockStyle.None;
-            await getSocios();
+           
         }
 
         private void DataGridViewPontuacoes_MouseClick(object sender, MouseEventArgs e)
@@ -216,6 +217,7 @@ namespace BravosdomaquisApp
 
         private async void btnVerSocios_Click(object sender, EventArgs e)
         {
+            await getSocios();
             panelVerSociosInscritos.Visible = false;
             panelVerSociosInscritos.Dock = DockStyle.None;
 
@@ -225,7 +227,7 @@ namespace BravosdomaquisApp
             panelVerSociosExistentes.Visible = true;
             panelVerSociosExistentes.Dock = DockStyle.Fill;
 
-            await getSocios();
+          
         }
 
         public async Task getSocios()
@@ -292,18 +294,9 @@ namespace BravosdomaquisApp
         private void btnNotificar_Click(object sender, EventArgs e)
         {
             
-            FormBackgroudModal formModal = new FormBackgroudModal();
-            formModal.Show();
-            if (modoEscuro)
-            {
-                ModalSMS sms = new ModalSMS(formModal, true);
-                sms.Show();
-            }
-            else
-            {
-                ModalSMS sms = new ModalSMS(formModal, false);
-                sms.Show();
-            }
+            ModalScreen formModal = new ModalScreen(parentScreen,new ModalSMS(modoEscuro));
+            formModal.ShowDialog();
+            
             
         }
 
@@ -333,12 +326,15 @@ namespace BravosdomaquisApp
             panelAprovReproNotify.Visible = false;
         }
 
-        private void DataGridViewSociosInscritos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private async void DataGridViewSociosInscritos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if(DataGridViewSociosInscritos.Columns[e.ColumnIndex].Name == "ViewDetail")
             {
                 panelAprovReproNotify.Visible = true;
                 lblInfoListaSociosInscri.Visible = lblSocIncri.Visible = true;
+                DataGridViewSociosInscritos.Visible = false;
+                
+               
 
                 var data = (DataGridViewSociosInscritos.CurrentRow.DataBoundItem as Socio);
                 txtTipoSocio.Text = $"{data.Classe.Nome_Classe}"; 
@@ -348,20 +344,28 @@ namespace BravosdomaquisApp
                 lbBilhete.Text = $"{data.Documento.NumeroDocumento}";
                 txtAnexo1.Text = data.Foto.Caminho;
                 txtAnexo2.Text = data.Documento.Caminho;
+                pictureBoxImagSocio.SizeMode = PictureBoxSizeMode.Zoom;
+                try
+                {
+                    pictureBoxImagSocio.Image = await ConversorFiles.ConverterParaImagem($"socio/{data.Foto.Caminho}");
+                }
+                catch (Exception)
+                {
+
+                    pictureBoxImagSocio.Image = Resources.userIMG;
+                }
             }
         }
 
-        private async void gunaButton1_Click(object sender, EventArgs e)
+        private  void gunaButton1_Click(object sender, EventArgs e)
         {
 
             try
             {
                 //showNotify(NotifyType.informacao, "Sem nenhum documento!");
-                FormBackgroudModal formModal = new FormBackgroudModal();
+                ModalScreen formModal = new ModalScreen(parentScreen, new PreVeiwImagem(txtAnexo1.Text.Trim(), modoEscuro));
                 formModal.Show();
-                var img = await ConversorFiles.ConverterParaImagem("socio/" + txtAnexo1.Text);
-                PreVeiwImagem contato = new PreVeiwImagem(formModal, modoEscuro,img );
-                contato.ShowDialog();
+            
             }
             catch (Exception ex)
             {

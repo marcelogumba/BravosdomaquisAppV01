@@ -65,7 +65,7 @@ namespace BravosdomaquisApp
             string Nacionlidade = DataGridViewListaTecnicos.CurrentRow.Cells[4].Value.ToString();
             string Redes = DataGridViewListaTecnicos.CurrentRow.Cells[5].Value.ToString();
 
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             if (modoEscuro)
             {
@@ -81,7 +81,7 @@ namespace BravosdomaquisApp
 
         private void btnAddTecnico_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             if (modoEscuro)
             {

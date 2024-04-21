@@ -159,7 +159,7 @@ namespace BravosdomaquisApp
 
         private void btnAddJogos_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             AddJogos AddJogos = new AddJogos(formModal, modoEscuro, cbxCampeonato.SelectedItem.ToString(), cbxJornadas.SelectedItem.ToString());
             AddJogos.Show();
@@ -167,7 +167,7 @@ namespace BravosdomaquisApp
 
         private void btnVerJogos_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             VerJogos VerJogos = new VerJogos(formModal, modoEscuro, cbxCampeonato.SelectedItem.ToString(), cbxJornadas.SelectedItem.ToString());
             VerJogos.Show();

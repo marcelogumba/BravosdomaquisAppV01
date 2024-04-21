@@ -67,7 +67,7 @@ namespace BravosdomaquisApp
                 string data = DataGridViewListaJogadores.CurrentRow.Cells[5].Value.ToString();
                 string redes = DataGridViewListaJogadores.CurrentRow.Cells[6].Value.ToString();
 
-                FormBackgroudModal formModal = new FormBackgroudModal();
+                ModalScreen formModal = new ModalScreen();
                 formModal.Show();
                 if (modoEscuro)
                 {
@@ -87,7 +87,7 @@ namespace BravosdomaquisApp
         }
         private void btnAddJogadores_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             if (modoEscuro)
             {

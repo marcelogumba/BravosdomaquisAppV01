@@ -38,7 +38,7 @@ namespace BravosdomaquisApp
         }
         private void btnVerGaleria_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             VerGaleria VerGaleria = new VerGaleria(formModal, modoEscuro);
             VerGaleria.Show();
@@ -46,7 +46,7 @@ namespace BravosdomaquisApp
 
         private void btnAddFotos_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             AddImagens addFotos = new AddImagens(formModal, modoEscuro);
             addFotos.Show();

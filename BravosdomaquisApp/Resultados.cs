@@ -21,7 +21,7 @@ namespace BravosdomaquisApp
         private void btnVerPontuaçoes_Click(object sender, EventArgs e)
         {
          
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             infoResultados results = new infoResultados(formModal, modoEscuro, cbxCampeonato.SelectedItem.ToString(), cbxJornada.SelectedItem.ToString());
             results.Show();
@@ -71,7 +71,7 @@ namespace BravosdomaquisApp
 
         private void btnJogosAdecorrer_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             VerJogosDecorrer verDecorr = new VerJogosDecorrer(formModal, modoEscuro);
             verDecorr.Show();

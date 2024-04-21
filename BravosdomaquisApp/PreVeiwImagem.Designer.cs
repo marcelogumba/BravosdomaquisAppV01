@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelInfoMembro = new Guna.UI.WinForms.GunaShadowPanel();
-            this.btnFechar = new Guna.UI.WinForms.GunaButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDescrTitulo = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnFechar = new Guna.UI.WinForms.GunaButton();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panelInfoMembro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -40,6 +43,7 @@
             // 
             this.panelInfoMembro.BackColor = System.Drawing.Color.Transparent;
             this.panelInfoMembro.BaseColor = System.Drawing.Color.Gainsboro;
+            this.panelInfoMembro.Controls.Add(this.guna2ControlBox1);
             this.panelInfoMembro.Controls.Add(this.lblDescrTitulo);
             this.panelInfoMembro.Controls.Add(this.pictureBox1);
             this.panelInfoMembro.Controls.Add(this.btnFechar);
@@ -51,8 +55,32 @@
             this.panelInfoMembro.Size = new System.Drawing.Size(884, 700);
             this.panelInfoMembro.TabIndex = 41;
             // 
+            // lblDescrTitulo
+            // 
+            this.lblDescrTitulo.AutoSize = true;
+            this.lblDescrTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblDescrTitulo.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.lblDescrTitulo.Location = new System.Drawing.Point(24, 19);
+            this.lblDescrTitulo.Name = "lblDescrTitulo";
+            this.lblDescrTitulo.Size = new System.Drawing.Size(194, 18);
+            this.lblDescrTitulo.TabIndex = 43;
+            this.lblDescrTitulo.Text = "Pre-visualização de imagem";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Location = new System.Drawing.Point(18, 56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(850, 625);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 42;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnFechar
             // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFechar.AnimationHoverSpeed = 0.07F;
             this.btnFechar.AnimationSpeed = 0.03F;
             this.btnFechar.BackColor = System.Drawing.Color.Transparent;
@@ -60,7 +88,7 @@
             this.btnFechar.BorderColor = System.Drawing.Color.Black;
             this.btnFechar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnFechar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnFechar.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
             this.btnFechar.Image = global::BravosdomaquisApp.Properties.Resources.x;
             this.btnFechar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -78,25 +106,24 @@
             this.btnFechar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // pictureBox1
+            // guna2ControlBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(850, 625);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 42;
-            this.pictureBox1.TabStop = false;
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BorderRadius = 5;
+            this.guna2ControlBox1.ControlBoxStyle = Guna.UI2.WinForms.Enums.ControlBoxStyle.Custom;
+            this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(788, 19);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(35, 29);
+            this.guna2ControlBox1.TabIndex = 44;
             // 
-            // lblDescrTitulo
+            // guna2DragControl1
             // 
-            this.lblDescrTitulo.AutoSize = true;
-            this.lblDescrTitulo.Font = new System.Drawing.Font("Montserrat", 11F);
-            this.lblDescrTitulo.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.lblDescrTitulo.Location = new System.Drawing.Point(16, 21);
-            this.lblDescrTitulo.Name = "lblDescrTitulo";
-            this.lblDescrTitulo.Size = new System.Drawing.Size(222, 21);
-            this.lblDescrTitulo.TabIndex = 43;
-            this.lblDescrTitulo.Text = "Pre-visualização de imagem";
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.panelInfoMembro;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // PreVeiwImagem
             // 
@@ -123,5 +150,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaButton btnFechar;
         private System.Windows.Forms.Label lblDescrTitulo;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

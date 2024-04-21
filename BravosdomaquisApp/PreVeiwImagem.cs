@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BravosdomaquisApp.Config;
+using BravosdomaquisApp.ExtensionMethod;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,21 +14,52 @@ namespace BravosdomaquisApp
 {
     public partial class PreVeiwImagem : Form
     {
-        Form form;
+        string _path;
         bool darkmode;
-        public PreVeiwImagem(Form formy, bool darkMode, Image source)
+        public PreVeiwImagem(string caminho, bool darkMode)
         {
             darkmode = darkMode;
-            form = formy;
+             _path=caminho;
            
 ;           InitializeComponent();
-            pictureBox1.Image = source;
+            this.Load += PreVeiwImagem_Load;
+           
+        }
+        public void darkMode()
+        {
+            panelInfoMembro.BaseColor = Color.FromArgb(5, 10, 26);
+            
+            pictureBox1.BackColor = Color.FromArgb(4, 8, 20);
+            lblDescrTitulo.ForeColor = Color.Gainsboro;
+        }
+
+        private void PreVeiwImagem_Load(object sender, EventArgs e)
+        {
+            if (darkmode)
+            {
+                darkMode();
+            }
+            Visualizar();
+        }
+
+        private async void Visualizar()
+        {
+            try
+            {
+                var img = await ConversorFiles.ConverterParaImagem($"socio/{_path}");
+                pictureBox1.Image = img;
+            }
+            catch (Exception ex)
+            {
+
+                this.ShowNotify(NotifyType.erro, ex.Message);
+            }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
-            form.Close();
+           
         }
     }
 }

@@ -72,7 +72,7 @@
             this.panelNewslatter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNewslatter.Location = new System.Drawing.Point(0, 0);
             this.panelNewslatter.Name = "panelNewslatter";
-            this.panelNewslatter.Size = new System.Drawing.Size(627, 760);
+            this.panelNewslatter.Size = new System.Drawing.Size(627, 700);
             this.panelNewslatter.TabIndex = 1;
             this.panelNewslatter.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -98,11 +98,11 @@
             this.lblNumInscritos.AutoSize = true;
             this.lblNumInscritos.BackColor = System.Drawing.Color.Transparent;
             this.lblNumInscritos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNumInscritos.Font = new System.Drawing.Font("Montserrat", 32F, System.Drawing.FontStyle.Bold);
+            this.lblNumInscritos.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
             this.lblNumInscritos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblNumInscritos.Location = new System.Drawing.Point(107, 0);
+            this.lblNumInscritos.Location = new System.Drawing.Point(98, 0);
             this.lblNumInscritos.Name = "lblNumInscritos";
-            this.lblNumInscritos.Size = new System.Drawing.Size(83, 60);
+            this.lblNumInscritos.Size = new System.Drawing.Size(72, 51);
             this.lblNumInscritos.TabIndex = 9;
             this.lblNumInscritos.Text = "00";
             // 
@@ -120,17 +120,17 @@
             this.gg.ShadowColor = System.Drawing.Color.Black;
             this.gg.ShadowShift = 0;
             this.gg.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
-            this.gg.Size = new System.Drawing.Size(107, 63);
+            this.gg.Size = new System.Drawing.Size(98, 63);
             this.gg.TabIndex = 63;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
             this.label1.Location = new System.Drawing.Point(10, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 15);
+            this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Nº de inscritos";
             // 
@@ -138,11 +138,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
             this.label2.Location = new System.Drawing.Point(8, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 26);
+            this.label2.Size = new System.Drawing.Size(87, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "Inscritos";
             // 
@@ -166,6 +166,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridViewInscritos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridViewInscritos.ColumnHeadersHeight = 40;
             this.DataGridViewInscritos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.emailDataGridViewTextBoxColumn,
             this.DataSubscricao,
@@ -187,7 +188,7 @@
             this.DataGridViewInscritos.RowHeadersVisible = false;
             this.DataGridViewInscritos.RowTemplate.Height = 35;
             this.DataGridViewInscritos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewInscritos.Size = new System.Drawing.Size(560, 606);
+            this.DataGridViewInscritos.Size = new System.Drawing.Size(560, 539);
             this.DataGridViewInscritos.TabIndex = 34;
             this.DataGridViewInscritos.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.DataGridViewInscritos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.LightSlateGray;
@@ -202,7 +203,7 @@
             this.DataGridViewInscritos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataGridViewInscritos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.DataGridViewInscritos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DataGridViewInscritos.ThemeStyle.HeaderStyle.Height = 23;
+            this.DataGridViewInscritos.ThemeStyle.HeaderStyle.Height = 40;
             this.DataGridViewInscritos.ThemeStyle.ReadOnly = true;
             this.DataGridViewInscritos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.LightSlateGray;
             this.DataGridViewInscritos.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -256,6 +257,7 @@
             // 
             // btnFechar
             // 
+            this.btnFechar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnFechar.AnimationHoverSpeed = 0.07F;
             this.btnFechar.AnimationSpeed = 0.03F;
             this.btnFechar.BackColor = System.Drawing.Color.Transparent;
@@ -268,7 +270,7 @@
             this.btnFechar.Image = null;
             this.btnFechar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnFechar.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnFechar.Location = new System.Drawing.Point(230, 721);
+            this.btnFechar.Location = new System.Drawing.Point(230, 661);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(67)))), ((int)(((byte)(145)))));
             this.btnFechar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -285,11 +287,11 @@
             // lblDescriNewslatter
             // 
             this.lblDescriNewslatter.AutoSize = true;
-            this.lblDescriNewslatter.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescriNewslatter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescriNewslatter.ForeColor = System.Drawing.Color.LightSlateGray;
             this.lblDescriNewslatter.Location = new System.Drawing.Point(30, 66);
             this.lblDescriNewslatter.Name = "lblDescriNewslatter";
-            this.lblDescriNewslatter.Size = new System.Drawing.Size(286, 16);
+            this.lblDescriNewslatter.Size = new System.Drawing.Size(265, 15);
             this.lblDescriNewslatter.TabIndex = 1;
             this.lblDescriNewslatter.Text = "Veja abaixo a lista de dos inscritos a Newslatter";
             // 
@@ -297,11 +299,11 @@
             // 
             this.lblNewsLatter.AutoSize = true;
             this.lblNewsLatter.BackColor = System.Drawing.Color.Transparent;
-            this.lblNewsLatter.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewsLatter.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewsLatter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(87)))), ((int)(((byte)(165)))));
             this.lblNewsLatter.Location = new System.Drawing.Point(65, 20);
             this.lblNewsLatter.Name = "lblNewsLatter";
-            this.lblNewsLatter.Size = new System.Drawing.Size(203, 44);
+            this.lblNewsLatter.Size = new System.Drawing.Size(178, 37);
             this.lblNewsLatter.TabIndex = 53;
             this.lblNewsLatter.Text = "Newslatter";
             // 
@@ -322,7 +324,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(627, 760);
+            this.ClientSize = new System.Drawing.Size(627, 700);
             this.Controls.Add(this.panelNewslatter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Newslatter";

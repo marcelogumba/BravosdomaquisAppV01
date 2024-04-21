@@ -28,27 +28,50 @@ namespace BravosdomaquisApp
         bool gerenciaExpand = false;
         int flagTelas = -1;
 
-        Campeaonato campeo = new Campeaonato();
-        Jogos jogos = new Jogos();
-        Pontuacao pontuacao = new Pontuacao();
-        Socios socios = new Socios();
-        Banner banner = new Banner();
-        Noticia noticia = new Noticia();
-        Estadios estadios = new Estadios();
-        Jogadores jogadores = new Jogadores();
-        Clubes clubes = new Clubes();
-        Memorial memorial = new Memorial();
-        Galeria galeria = new Galeria();
-        Jornadas jornadas = new Jornadas();
-        Bilhete bilhete = new Bilhete();
-        Resultados resultados = new Resultados();
-        EquipaTecnica equipaTecnica = new EquipaTecnica();
-        Parceiro parceiro = new Parceiro();
-        MembrosDaDirecao membros = new MembrosDaDirecao();
-        Inicio inicio = new Inicio();
+        Campeaonato campeo;
+        Jogos jogos;
+        Pontuacao pontuacao;
+        Socios socios;
+        Banner banner;
+        Noticia noticia;
+        Estadios estadios;
+        Jogadores jogadores;
+        Clubes clubes;
+        Memorial memorial;
+        Galeria galeria;
+        Jornadas jornadas;
+        Bilhete bilhete;
+        Resultados resultados;
+        EquipaTecnica equipaTecnica;
+        Parceiro parceiro;
+        MembrosDaDirecao membros;
+        Inicio inicio;
+        private void InitUserScreens()
+        {
+            campeo = new Campeaonato();
+            jogos = new Jogos();
+            pontuacao = new Pontuacao();
+            socios=new Socios(this);
+            banner = new Banner();
+            noticia = new Noticia();
+            estadios = new Estadios();
+            jogadores = new Jogadores();
+            clubes = new Clubes();
+            memorial = new Memorial();
+            galeria = new Galeria();
+            jornadas = new Jornadas();
+            bilhete = new Bilhete(this);
+            resultados = new Resultados();
+            equipaTecnica = new EquipaTecnica();
+            parceiro = new Parceiro();
+            membros = new MembrosDaDirecao();
+            inicio = new Inicio();
+        }
         public Principal(bool ModoEscuro)
         {
             InitializeComponent();
+            InitUserScreens();
+            
 
             if (Settings.Default.UserLogado != null)
             {
@@ -510,7 +533,7 @@ namespace BravosdomaquisApp
 
         private void buttunUI11_Click(object sender, EventArgs e)
         {
-          FormBackgroudModal formModal = new FormBackgroudModal();
+          ModalScreen formModal = new ModalScreen();
             formModal.Show();
             Newslatter newslatter = new Newslatter(formModal, modoEscuro);
             newslatter.ShowDialog();
@@ -568,10 +591,10 @@ namespace BravosdomaquisApp
 
         private void btnContactos_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
-            formModal.Show();
-            Contacto contato = new Contacto(formModal, modoEscuro);
-            contato.ShowDialog();
+            ModalScreen formModal = new ModalScreen(this,new Feedbacks(modoEscuro));
+            formModal.ShowDialog(); ;
+            //Feedbacks contato = new Feedbacks(formModal, modoEscuro);
+            //contato.ShowDialog();
             
         }
 
@@ -849,7 +872,7 @@ namespace BravosdomaquisApp
 
         private void btnInfoClube_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             InfoClubes InfoClubes = new InfoClubes(formModal, modoEscuro, "");
             InfoClubes.ShowDialog();
@@ -870,15 +893,15 @@ namespace BravosdomaquisApp
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
-            formModal.Show();
-            Contacto contato = new Contacto(formModal, modoEscuro);
-            contato.ShowDialog();
+            ModalScreen formModal = new ModalScreen(this,new Feedbacks(modoEscuro));
+            formModal.ShowDialog();
+            //Contacto contato = new Contacto(formModal, modoEscuro);
+            //contato.ShowDialog();
         }
 
         private void btnJogosMaquis_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             VerJogos VerJogos = new VerJogos(formModal, modoEscuro);
             VerJogos.ShowDialog();

@@ -184,7 +184,7 @@ namespace BravosdomaquisApp
 
         private void btnCriarConta_Click(object sender, EventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             CriarConta CriarConta = new CriarConta(formModal, ModoEscuro);
             CriarConta.ShowDialog();

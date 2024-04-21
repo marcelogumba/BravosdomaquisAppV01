@@ -61,8 +61,14 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.9.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.0.9\lib\net48\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\..\OneDrive\Documentos\BravosdomaquisApp\BravosdomaquisApp\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
@@ -200,11 +206,11 @@
     <Compile Include="Config\ConversorFiles.cs" />
     <Compile Include="Config\ServiceBase.cs" />
     <Compile Include="Config\SystemTheme.cs" />
-    <Compile Include="Contacto.cs">
+    <Compile Include="Feedbacks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contacto.Designer.cs">
-      <DependentUpon>Contacto.cs</DependentUpon>
+    <Compile Include="Feedbacks.Designer.cs">
+      <DependentUpon>Feedbacks.cs</DependentUpon>
     </Compile>
     <Compile Include="Banner.cs">
       <SubType>UserControl</SubType>
@@ -258,11 +264,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBackgroudModal.cs">
+    <Compile Include="ModalScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBackgroudModal.Designer.cs">
-      <DependentUpon>FormBackgroudModal.cs</DependentUpon>
+    <Compile Include="ModalScreen.Designer.cs">
+      <DependentUpon>ModalScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="FotosPane.cs">
       <SubType>UserControl</SubType>
@@ -539,8 +545,8 @@
     <EmbeddedResource Include="Comentarios.resx">
       <DependentUpon>Comentarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Contacto.resx">
-      <DependentUpon>Contacto.cs</DependentUpon>
+    <EmbeddedResource Include="Feedbacks.resx">
+      <DependentUpon>Feedbacks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Banner.resx">
       <DependentUpon>Banner.cs</DependentUpon>
@@ -563,8 +569,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBackgroudModal.resx">
-      <DependentUpon>FormBackgroudModal.cs</DependentUpon>
+    <EmbeddedResource Include="ModalScreen.resx">
+      <DependentUpon>ModalScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FotosPane.resx">
       <DependentUpon>FotosPane.cs</DependentUpon>
@@ -690,12 +696,14 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Maquis.Models.Domain.Bilhete.datasource" />
     <None Include="Properties\DataSources\Maquis.Models.Domain.Clubes.datasource" />
     <None Include="Properties\DataSources\Maquis.Models.Domain.EquipaTecnica.datasource" />
     <None Include="Properties\DataSources\Maquis.Models.Domain.Estadio.datasource" />
     <None Include="Properties\DataSources\Maquis.Models.Domain.Newslatter.datasource" />
     <None Include="Properties\DataSources\Maquis.Models.Domain.Noticia.datasource" />
     <None Include="Properties\DataSources\Maquis.Models.Domain.Parceiro.datasource" />
+    <None Include="Properties\DataSources\Maquis.Models.Domain.ReservaBilhete.datasource" />
     <None Include="Properties\DataSources\Maquis.Models.Domain.Socio.datasource" />
     <None Include="Properties\DataSources\Personalizar.datasource" />
     <None Include="Properties\DataSources\sourceBanner.datasource" />

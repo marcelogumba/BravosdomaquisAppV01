@@ -328,7 +328,7 @@ namespace BravosdomaquisApp
         private void lbLinkVerComentarios_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen();
             formModal.Show();
             Comentarios comentario = new Comentarios(formModal, modoEscuro);
             comentario.Show();

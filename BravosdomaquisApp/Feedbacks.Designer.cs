@@ -1,6 +1,6 @@
 ﻿namespace BravosdomaquisApp
 {
-    partial class Contacto
+    partial class Feedbacks
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@
             this.panelContacto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContacto.Location = new System.Drawing.Point(0, 0);
             this.panelContacto.Name = "panelContacto";
-            this.panelContacto.Size = new System.Drawing.Size(697, 721);
+            this.panelContacto.Size = new System.Drawing.Size(697, 680);
             this.panelContacto.TabIndex = 0;
             this.panelContacto.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContacto_Paint);
             // 
@@ -83,11 +83,11 @@
             this.lblNumEnviadas.AutoSize = true;
             this.lblNumEnviadas.BackColor = System.Drawing.Color.Transparent;
             this.lblNumEnviadas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNumEnviadas.Font = new System.Drawing.Font("Montserrat", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumEnviadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumEnviadas.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblNumEnviadas.Location = new System.Drawing.Point(123, 0);
+            this.lblNumEnviadas.Location = new System.Drawing.Point(118, 0);
             this.lblNumEnviadas.Name = "lblNumEnviadas";
-            this.lblNumEnviadas.Size = new System.Drawing.Size(71, 60);
+            this.lblNumEnviadas.Size = new System.Drawing.Size(72, 51);
             this.lblNumEnviadas.TabIndex = 9;
             this.lblNumEnviadas.Text = "10";
             // 
@@ -105,17 +105,17 @@
             this.gg.ShadowColor = System.Drawing.Color.Black;
             this.gg.ShadowShift = 0;
             this.gg.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
-            this.gg.Size = new System.Drawing.Size(123, 63);
+            this.gg.Size = new System.Drawing.Size(118, 63);
             this.gg.TabIndex = 63;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
             this.label4.Location = new System.Drawing.Point(9, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 15);
+            this.label4.Size = new System.Drawing.Size(83, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Nº de recebidas";
             // 
@@ -123,16 +123,17 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
             this.label11.Location = new System.Drawing.Point(6, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 26);
+            this.label11.Size = new System.Drawing.Size(109, 24);
             this.label11.TabIndex = 7;
             this.label11.Text = "Recebidas";
             // 
             // btnFechar
             // 
+            this.btnFechar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnFechar.AnimationHoverSpeed = 0.07F;
             this.btnFechar.AnimationSpeed = 0.03F;
             this.btnFechar.BackColor = System.Drawing.Color.Transparent;
@@ -140,12 +141,12 @@
             this.btnFechar.BorderColor = System.Drawing.Color.Black;
             this.btnFechar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnFechar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnFechar.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
             this.btnFechar.Image = null;
             this.btnFechar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnFechar.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnFechar.Location = new System.Drawing.Point(259, 679);
+            this.btnFechar.Location = new System.Drawing.Point(259, 638);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(67)))), ((int)(((byte)(145)))));
             this.btnFechar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -166,7 +167,7 @@
             this.flowLayoutPanel.Location = new System.Drawing.Point(44, 103);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
             this.flowLayoutPanel.Padding = new System.Windows.Forms.Padding(15);
-            this.flowLayoutPanel.Size = new System.Drawing.Size(603, 557);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(603, 518);
             this.flowLayoutPanel.TabIndex = 64;
             this.flowLayoutPanel.WrapContents = false;
             // 
@@ -182,11 +183,11 @@
             // lblDescriNewslatter
             // 
             this.lblDescriNewslatter.AutoSize = true;
-            this.lblDescriNewslatter.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescriNewslatter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescriNewslatter.ForeColor = System.Drawing.Color.LightSlateGray;
             this.lblDescriNewslatter.Location = new System.Drawing.Point(41, 70);
             this.lblDescriNewslatter.Name = "lblDescriNewslatter";
-            this.lblDescriNewslatter.Size = new System.Drawing.Size(219, 16);
+            this.lblDescriNewslatter.Size = new System.Drawing.Size(203, 15);
             this.lblDescriNewslatter.TabIndex = 60;
             this.lblDescriNewslatter.Text = "Veja abaixo a lista de dos Contactos";
             // 
@@ -194,24 +195,24 @@
             // 
             this.lblContactos.AutoSize = true;
             this.lblContactos.BackColor = System.Drawing.Color.Transparent;
-            this.lblContactos.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContactos.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContactos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(87)))), ((int)(((byte)(165)))));
             this.lblContactos.Location = new System.Drawing.Point(77, 23);
             this.lblContactos.Name = "lblContactos";
-            this.lblContactos.Size = new System.Drawing.Size(188, 44);
+            this.lblContactos.Size = new System.Drawing.Size(171, 37);
             this.lblContactos.TabIndex = 61;
             this.lblContactos.Text = "Contactos";
             this.lblContactos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Contacto
+            // Feedbacks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(697, 721);
+            this.ClientSize = new System.Drawing.Size(697, 680);
             this.Controls.Add(this.panelContacto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Contacto";
+            this.Name = "Feedbacks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contacto";
             this.TransparencyKey = System.Drawing.Color.Black;

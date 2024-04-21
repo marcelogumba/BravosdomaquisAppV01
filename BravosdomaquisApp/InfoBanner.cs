@@ -51,10 +51,9 @@ namespace BravosdomaquisApp
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormBackgroudModal formModal = new FormBackgroudModal();
+            ModalScreen formModal = new ModalScreen(form,new PreVeiwImagem(null, modoEscuro));
             formModal.Show();
-            PreVeiwImagem preview = new PreVeiwImagem(formModal, modoEscuro, null);
-            preview.Show();
+          
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

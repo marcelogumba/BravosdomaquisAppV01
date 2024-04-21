@@ -1,6 +1,6 @@
 ﻿namespace BravosdomaquisApp
 {
-    partial class FormBackgroudModal
+    partial class ModalScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -30,19 +30,18 @@
         {
             this.SuspendLayout();
             // 
-            // FormBackgroudModal
+            // ModalScreen
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1090, 541);
-            this.Enabled = false;
+            this.ClientSize = new System.Drawing.Size(1163, 632);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormBackgroudModal";
+            this.Name = "ModalScreen";
             this.Opacity = 0.7D;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormBackgroudModal";
             this.TransparencyKey = System.Drawing.Color.Transparent;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Click += new System.EventHandler(this.FormBackgroudModal_Click);
             this.ResumeLayout(false);
 

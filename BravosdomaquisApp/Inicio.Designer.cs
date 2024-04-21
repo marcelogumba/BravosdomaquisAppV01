@@ -28,6 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.Charts.WinForms.ChartFont chartFont1 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont2 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont3 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.ChartFont chartFont4 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid1 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.Tick tick1 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont5 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid2 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.Tick tick2 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont6 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Grid grid3 = new Guna.Charts.WinForms.Grid();
+            Guna.Charts.WinForms.PointLabel pointLabel1 = new Guna.Charts.WinForms.PointLabel();
+            Guna.Charts.WinForms.ChartFont chartFont7 = new Guna.Charts.WinForms.ChartFont();
+            Guna.Charts.WinForms.Tick tick3 = new Guna.Charts.WinForms.Tick();
+            Guna.Charts.WinForms.ChartFont chartFont8 = new Guna.Charts.WinForms.ChartFont();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -46,12 +61,16 @@
             this.panelBase = new Guna.UI.WinForms.GunaShadowPanel();
             this.panelInfoBravo = new Guna.UI.WinForms.GunaShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelGrafico = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gGrafico = new Guna.Charts.WinForms.GunaChart();
+            this.gunaLineDataset1 = new Guna.Charts.WinForms.GunaLineDataset();
             this.panelSuperior.SuspendLayout();
             this.panelCard1.SuspendLayout();
             this.gg.SuspendLayout();
             this.panelBase.SuspendLayout();
             this.panelInfoBravo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelGrafico.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -88,12 +107,11 @@
             // 
             // lblDescrTitulo
             // 
-            this.lblDescrTitulo.AutoSize = true;
             this.lblDescrTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblDescrTitulo.ForeColor = System.Drawing.Color.LightSlateGray;
             this.lblDescrTitulo.Location = new System.Drawing.Point(27, 60);
             this.lblDescrTitulo.Name = "lblDescrTitulo";
-            this.lblDescrTitulo.Size = new System.Drawing.Size(531, 15);
+            this.lblDescrTitulo.Size = new System.Drawing.Size(427, 43);
             this.lblDescrTitulo.TabIndex = 4;
             this.lblDescrTitulo.Text = "Este aplicativo está destinado a gestão interna das funcionalidades do Site do Br" +
     "avos do Maquis";
@@ -114,7 +132,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(10, 107);
+            this.panel6.Location = new System.Drawing.Point(10, 118);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(962, 10);
             this.panel6.TabIndex = 10;
@@ -125,7 +143,7 @@
             this.lblInfoBravos.BackColor = System.Drawing.Color.Transparent;
             this.lblInfoBravos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lblInfoBravos.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblInfoBravos.Location = new System.Drawing.Point(297, 362);
+            this.lblInfoBravos.Location = new System.Drawing.Point(56, 342);
             this.lblInfoBravos.MaximumSize = new System.Drawing.Size(480, 34);
             this.lblInfoBravos.Name = "lblInfoBravos";
             this.lblInfoBravos.Size = new System.Drawing.Size(314, 27);
@@ -148,7 +166,7 @@
             this.btnInfoClube.ForeColor = System.Drawing.Color.White;
             this.btnInfoClube.Image = null;
             this.btnInfoClube.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnInfoClube.Location = new System.Drawing.Point(300, 397);
+            this.btnInfoClube.Location = new System.Drawing.Point(59, 409);
             this.btnInfoClube.MaximumSize = new System.Drawing.Size(660, 34);
             this.btnInfoClube.Name = "btnInfoClube";
             this.btnInfoClube.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(67)))), ((int)(((byte)(145)))));
@@ -176,7 +194,7 @@
             this.panelSuperior.Radius = 8;
             this.panelSuperior.ShadowColor = System.Drawing.Color.Black;
             this.panelSuperior.ShadowShift = 3;
-            this.panelSuperior.Size = new System.Drawing.Size(962, 97);
+            this.panelSuperior.Size = new System.Drawing.Size(962, 108);
             this.panelSuperior.TabIndex = 16;
             // 
             // panelCard1
@@ -187,7 +205,7 @@
             this.panelCard1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(87)))), ((int)(((byte)(165)))));
             this.panelCard1.Controls.Add(this.lblNumAcessos);
             this.panelCard1.Controls.Add(this.gg);
-            this.panelCard1.Location = new System.Drawing.Point(699, 17);
+            this.panelCard1.Location = new System.Drawing.Point(699, 22);
             this.panelCard1.Name = "panelCard1";
             this.panelCard1.Radius = 5;
             this.panelCard1.ShadowColor = System.Drawing.Color.Black;
@@ -253,43 +271,106 @@
             // 
             this.panelBase.BackColor = System.Drawing.Color.Transparent;
             this.panelBase.BaseColor = System.Drawing.Color.Gainsboro;
+            this.panelBase.Controls.Add(this.panelGrafico);
             this.panelBase.Controls.Add(this.panelInfoBravo);
             this.panelBase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBase.Location = new System.Drawing.Point(10, 117);
+            this.panelBase.Location = new System.Drawing.Point(10, 128);
             this.panelBase.Name = "panelBase";
+            this.panelBase.Padding = new System.Windows.Forms.Padding(10);
             this.panelBase.Radius = 8;
             this.panelBase.ShadowColor = System.Drawing.Color.Black;
             this.panelBase.ShadowShift = 3;
-            this.panelBase.Size = new System.Drawing.Size(962, 502);
+            this.panelBase.Size = new System.Drawing.Size(962, 491);
             this.panelBase.TabIndex = 18;
             this.panelBase.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBase_Paint);
             // 
             // panelInfoBravo
             // 
-            this.panelInfoBravo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelInfoBravo.BackColor = System.Drawing.Color.Transparent;
             this.panelInfoBravo.BaseColor = System.Drawing.Color.Gainsboro;
             this.panelInfoBravo.Controls.Add(this.pictureBox1);
             this.panelInfoBravo.Controls.Add(this.btnInfoClube);
             this.panelInfoBravo.Controls.Add(this.lblInfoBravos);
-            this.panelInfoBravo.Location = new System.Drawing.Point(28, 27);
+            this.panelInfoBravo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelInfoBravo.Location = new System.Drawing.Point(10, 10);
             this.panelInfoBravo.Name = "panelInfoBravo";
             this.panelInfoBravo.Radius = 8;
             this.panelInfoBravo.ShadowColor = System.Drawing.Color.Black;
             this.panelInfoBravo.ShadowShift = 4;
-            this.panelInfoBravo.Size = new System.Drawing.Size(910, 450);
+            this.panelInfoBravo.Size = new System.Drawing.Size(413, 471);
             this.panelInfoBravo.TabIndex = 18;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::BravosdomaquisApp.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(281, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(61, 32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(340, 340);
+            this.pictureBox1.Size = new System.Drawing.Size(289, 293);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
+            // 
+            // panelGrafico
+            // 
+            this.panelGrafico.BackColor = System.Drawing.Color.Transparent;
+            this.panelGrafico.BaseColor = System.Drawing.Color.Gainsboro;
+            this.panelGrafico.Controls.Add(this.gGrafico);
+            this.panelGrafico.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelGrafico.Location = new System.Drawing.Point(423, 10);
+            this.panelGrafico.Name = "panelGrafico";
+            this.panelGrafico.Padding = new System.Windows.Forms.Padding(5);
+            this.panelGrafico.Radius = 8;
+            this.panelGrafico.ShadowColor = System.Drawing.Color.Black;
+            this.panelGrafico.ShadowShift = 4;
+            this.panelGrafico.Size = new System.Drawing.Size(529, 471);
+            this.panelGrafico.TabIndex = 19;
+            // 
+            // gGrafico
+            // 
+            this.gGrafico.BackColor = System.Drawing.Color.Gainsboro;
+            this.gGrafico.Datasets.AddRange(new Guna.Charts.Interfaces.IGunaDataset[] {
+            this.gunaLineDataset1});
+            this.gGrafico.Dock = System.Windows.Forms.DockStyle.Fill;
+            chartFont1.FontName = "Arial";
+            this.gGrafico.Legend.LabelFont = chartFont1;
+            this.gGrafico.Location = new System.Drawing.Point(5, 5);
+            this.gGrafico.Name = "gGrafico";
+            this.gGrafico.Size = new System.Drawing.Size(519, 461);
+            this.gGrafico.TabIndex = 0;
+            chartFont2.FontName = "Arial";
+            chartFont2.Size = 12;
+            chartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.gGrafico.Title.Font = chartFont2;
+            chartFont3.FontName = "Arial";
+            this.gGrafico.Tooltips.BodyFont = chartFont3;
+            chartFont4.FontName = "Arial";
+            chartFont4.Size = 9;
+            chartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold;
+            this.gGrafico.Tooltips.TitleFont = chartFont4;
+            this.gGrafico.XAxes.GridLines = grid1;
+            chartFont5.FontName = "Arial";
+            tick1.Font = chartFont5;
+            this.gGrafico.XAxes.Ticks = tick1;
+            this.gGrafico.YAxes.GridLines = grid2;
+            chartFont6.FontName = "Arial";
+            tick2.Font = chartFont6;
+            this.gGrafico.YAxes.Ticks = tick2;
+            this.gGrafico.ZAxes.GridLines = grid3;
+            chartFont7.FontName = "Arial";
+            pointLabel1.Font = chartFont7;
+            this.gGrafico.ZAxes.PointLabels = pointLabel1;
+            chartFont8.FontName = "Arial";
+            tick3.Font = chartFont8;
+            this.gGrafico.ZAxes.Ticks = tick3;
+            this.gGrafico.Zoom = Guna.Charts.WinForms.ZoomMode.XY;
+            // 
+            // gunaLineDataset1
+            // 
+            this.gunaLineDataset1.BorderColor = System.Drawing.Color.Empty;
+            this.gunaLineDataset1.FillColor = System.Drawing.Color.Empty;
+            this.gunaLineDataset1.Label = "Acessos";
+            this.gunaLineDataset1.TargetChart = this.gGrafico;
             // 
             // Inicio
             // 
@@ -314,6 +395,7 @@
             this.panelBase.ResumeLayout(false);
             this.panelInfoBravo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelGrafico.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -338,5 +420,8 @@
         private Guna.UI.WinForms.GunaShadowPanel gg;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label11;
+        private Guna.UI.WinForms.GunaShadowPanel panelGrafico;
+        private Guna.Charts.WinForms.GunaChart gGrafico;
+        private Guna.Charts.WinForms.GunaLineDataset gunaLineDataset1;
     }
 }

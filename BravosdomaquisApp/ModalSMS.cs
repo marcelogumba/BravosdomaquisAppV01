@@ -13,11 +13,11 @@ namespace BravosdomaquisApp
 {
     public partial class ModalSMS : Form
     {
-        Form form;
+        
        
-        public ModalSMS(Form formy, bool darkMode)
+        public ModalSMS(bool darkMode)
         {
-            form = formy;
+           
             InitializeComponent();
 
             if (darkMode)
@@ -60,7 +60,7 @@ namespace BravosdomaquisApp
         private void btnFecharSMS_Click(object sender, EventArgs e)
         {
             this.Close();
-            form.Close();
+           
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
